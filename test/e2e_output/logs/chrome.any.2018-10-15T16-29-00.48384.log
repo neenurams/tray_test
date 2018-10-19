@@ -1,0 +1,369 @@
+[17:29:00]  COMMAND	GET 	 "/wd/hub/status"
+[17:29:00]  DATA		{}
+[17:29:00]  RESULT		{"build":{"version":"alpha"},"os":{"arch":"x86_64","name":"Mac OS X","version":"10.13.4"}}
+[17:29:00]  COMMAND	POST 	 "/wd/hub/session"
+[17:29:00]  DATA		{"desiredCapabilities":{"javascriptEnabled":true,"locationContextEnabled":true,"handlesAlerts":true,"rotatable":true,"chromeOptions":{"prefs":{"profile.default_content_settings.popups":0,"download.default_directory":"test/e2e_downloads"},"args":["disable-gpu","window-size=1920x1080","no-sandbox"]},"isHeadless":false,"browserName":"chrome","platform":"ANY","name":"","loggingPrefs":{"browser":"ALL","driver":"ALL"},"_":"1 more keys: [\"requestOrigins\"]"}}
+[17:29:01]  INFO	SET SESSION ID 58d70dc19431628b2cba575ecc34e427
+[17:29:01]  RESULT		{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db)","userDataDir":"/var/folders/zd/m442nyf515nfj63pgsj132f00000gp/T/.org.chromium.Chromium.hssZ03"},"cssSelectorsEnabled":true,"databaseEnabled":false,"goog:chromeOptions":{"debuggerAddress":"localhost:52967"},"handlesAlerts":true,"hasTouchScreen":false,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platform":"Mac OS X","rotatable":false,"setWindowRect":true,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"69.0.3497.100","webStorageEnabled":true}
+[17:29:01]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/url"
+[17:29:01]  DATA		{"url":"https://qa.ckotech.co/v2/login"}
+[17:29:03]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element"
+[17:29:03]  DATA		{"using":"css selector","value":"input[type=\"email\"]"}
+[17:29:03]  RESULT		{"ELEMENT":"0.5909088433510143-1"}
+[17:29:03]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.5909088433510143-1/clear"
+[17:29:03]  DATA		{}
+[17:29:03]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.5909088433510143-1/value"
+[17:29:03]  DATA		{"value":["q","a","_","e","m","a","i","l","+","c","(22 more items)"],"text":"qa_email+chimpAdmin@checkout.com"}
+[17:29:03]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element"
+[17:29:03]  DATA		{"using":"css selector","value":"input[type=\"password\"]"}
+[17:29:03]  RESULT		{"ELEMENT":"0.5909088433510143-2"}
+[17:29:03]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.5909088433510143-2/clear"
+[17:29:03]  DATA		{}
+[17:29:03]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.5909088433510143-2/value"
+[17:29:03]  DATA		{"value":["C","h","e","c","k","o","u","t","_","1","(2 more items)"],"text":"Checkout_123"}
+[17:29:03]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element"
+[17:29:03]  DATA		{"using":"css selector","value":"[value=\"Log in\"]"}
+[17:29:03]  RESULT		{"ELEMENT":"0.5909088433510143-3"}
+[17:29:03]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.5909088433510143-3/click"
+[17:29:03]  DATA		{}
+[17:29:04]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/url"
+[17:29:04]  DATA		{}
+[17:29:04]  RESULT		"https://qa.ckotech.co/v2/login"
+[17:29:04]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/url"
+[17:29:04]  DATA		{}
+[17:29:04]  RESULT		"https://qa.ckotech.co/v2/login"
+[17:29:04]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/url"
+[17:29:04]  DATA		{}
+[17:29:04]  RESULT		"https://qa.ckotech.co/v2/dashboard"
+[17:29:05]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element"
+[17:29:05]  DATA		{"using":"css selector","value":"[id = \"kpi-title\"]"}
+[17:29:05]  RESULT		{"ELEMENT":"0.5909088433510143-4"}
+[17:29:05]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.5909088433510143-4/text"
+[17:29:05]  DATA		{}
+[17:29:05]  RESULT		"Key performance indicators"
+[17:29:10]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element"
+[17:29:10]  DATA		{"using":"css selector","value":"[id=\"kpi-title\"]"}
+[17:29:10]  RESULT		{"ELEMENT":"0.5909088433510143-4"}
+[17:29:10]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.5909088433510143-4/text"
+[17:29:10]  DATA		{}
+[17:29:10]  RESULT		"Key performance indicators"
+[17:29:10]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:10]  DATA		{"using":"css selector","value":"[class=\"title css-1wplclg\"]"}
+[17:29:10]  RESULT		[{"ELEMENT":"0.5909088433510143-5"},{"ELEMENT":"0.5909088433510143-6"},{"ELEMENT":"0.5909088433510143-7"},{"ELEMENT":"0.5909088433510143-8"}]
+[17:29:10]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:10]  DATA		{"using":"css selector","value":"[class=\"title css-1wplclg\"]"}
+[17:29:10]  RESULT		[{"ELEMENT":"0.5909088433510143-5"},{"ELEMENT":"0.5909088433510143-6"},{"ELEMENT":"0.5909088433510143-7"},{"ELEMENT":"0.5909088433510143-8"}]
+[17:29:10]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.5909088433510143-5/text"
+[17:29:10]  DATA		{}
+[17:29:10]  RESULT		"Total revenue"
+[17:29:10]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:10]  DATA		{"using":"css selector","value":"[class=\"title css-1wplclg\"]"}
+[17:29:10]  RESULT		[{"ELEMENT":"0.5909088433510143-5"},{"ELEMENT":"0.5909088433510143-6"},{"ELEMENT":"0.5909088433510143-7"},{"ELEMENT":"0.5909088433510143-8"}]
+[17:29:10]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:10]  DATA		{"using":"css selector","value":"[class=\"title css-1wplclg\"]"}
+[17:29:10]  RESULT		[{"ELEMENT":"0.5909088433510143-5"},{"ELEMENT":"0.5909088433510143-6"},{"ELEMENT":"0.5909088433510143-7"},{"ELEMENT":"0.5909088433510143-8"}]
+[17:29:10]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.5909088433510143-6/text"
+[17:29:10]  DATA		{}
+[17:29:11]  RESULT		"Net revenue"
+[17:29:11]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:11]  DATA		{"using":"css selector","value":"[class=\"title css-1wplclg\"]"}
+[17:29:11]  RESULT		[{"ELEMENT":"0.5909088433510143-5"},{"ELEMENT":"0.5909088433510143-6"},{"ELEMENT":"0.5909088433510143-7"},{"ELEMENT":"0.5909088433510143-8"}]
+[17:29:11]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:11]  DATA		{"using":"css selector","value":"[class=\"title css-1wplclg\"]"}
+[17:29:11]  RESULT		[{"ELEMENT":"0.5909088433510143-5"},{"ELEMENT":"0.5909088433510143-6"},{"ELEMENT":"0.5909088433510143-7"},{"ELEMENT":"0.5909088433510143-8"}]
+[17:29:11]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.5909088433510143-7/text"
+[17:29:11]  DATA		{}
+[17:29:11]  RESULT		"Approved sales"
+[17:29:11]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:11]  DATA		{"using":"css selector","value":"[class=\"title css-1wplclg\"]"}
+[17:29:11]  RESULT		[{"ELEMENT":"0.5909088433510143-5"},{"ELEMENT":"0.5909088433510143-6"},{"ELEMENT":"0.5909088433510143-7"},{"ELEMENT":"0.5909088433510143-8"}]
+[17:29:11]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:11]  DATA		{"using":"css selector","value":"[class=\"title css-1wplclg\"]"}
+[17:29:11]  RESULT		[{"ELEMENT":"0.5909088433510143-5"},{"ELEMENT":"0.5909088433510143-6"},{"ELEMENT":"0.5909088433510143-7"},{"ELEMENT":"0.5909088433510143-8"}]
+[17:29:11]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.5909088433510143-8/text"
+[17:29:11]  DATA		{}
+[17:29:11]  RESULT		"Customers"
+[17:29:11]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:11]  DATA		{"using":"css selector","value":"[class=\"title css-1wplclg\"]"}
+[17:29:11]  RESULT		[{"ELEMENT":"0.5909088433510143-5"},{"ELEMENT":"0.5909088433510143-6"},{"ELEMENT":"0.5909088433510143-7"},{"ELEMENT":"0.5909088433510143-8"}]
+[17:29:11]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:11]  DATA		{"using":"css selector","value":"p[class=\"sub-title css-1fnocij\"]"}
+[17:29:11]  RESULT		[{"ELEMENT":"0.5909088433510143-9"},{"ELEMENT":"0.5909088433510143-10"},{"ELEMENT":"0.5909088433510143-11"},{"ELEMENT":"0.5909088433510143-12"}]
+[17:29:11]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:11]  DATA		{"using":"css selector","value":"p[class=\"sub-title css-1fnocij\"]"}
+[17:29:11]  RESULT		[{"ELEMENT":"0.5909088433510143-9"},{"ELEMENT":"0.5909088433510143-10"},{"ELEMENT":"0.5909088433510143-11"},{"ELEMENT":"0.5909088433510143-12"}]
+[17:29:11]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.5909088433510143-9/text"
+[17:29:11]  DATA		{}
+[17:29:11]  RESULT		"Including all captured payments"
+[17:29:11]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:11]  DATA		{"using":"css selector","value":"p[class=\"sub-title css-1fnocij\"]"}
+[17:29:11]  RESULT		[{"ELEMENT":"0.5909088433510143-9"},{"ELEMENT":"0.5909088433510143-10"},{"ELEMENT":"0.5909088433510143-11"},{"ELEMENT":"0.5909088433510143-12"}]
+[17:29:11]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:11]  DATA		{"using":"css selector","value":"p[class=\"sub-title css-1fnocij\"]"}
+[17:29:11]  RESULT		[{"ELEMENT":"0.5909088433510143-9"},{"ELEMENT":"0.5909088433510143-10"},{"ELEMENT":"0.5909088433510143-11"},{"ELEMENT":"0.5909088433510143-12"}]
+[17:29:11]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.5909088433510143-10/text"
+[17:29:11]  DATA		{}
+[17:29:11]  RESULT		"Total revenue minus refunds and chargebacks"
+[17:29:11]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:11]  DATA		{"using":"css selector","value":"p[class=\"sub-title css-1fnocij\"]"}
+[17:29:11]  RESULT		[{"ELEMENT":"0.5909088433510143-9"},{"ELEMENT":"0.5909088433510143-10"},{"ELEMENT":"0.5909088433510143-11"},{"ELEMENT":"0.5909088433510143-12"}]
+[17:29:11]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:11]  DATA		{"using":"css selector","value":"p[class=\"sub-title css-1fnocij\"]"}
+[17:29:11]  RESULT		[{"ELEMENT":"0.5909088433510143-9"},{"ELEMENT":"0.5909088433510143-10"},{"ELEMENT":"0.5909088433510143-11"},{"ELEMENT":"0.5909088433510143-12"}]
+[17:29:11]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.5909088433510143-11/text"
+[17:29:11]  DATA		{}
+[17:29:11]  RESULT		"Number of captured payments"
+[17:29:11]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:11]  DATA		{"using":"css selector","value":"p[class=\"sub-title css-1fnocij\"]"}
+[17:29:11]  RESULT		[{"ELEMENT":"0.5909088433510143-9"},{"ELEMENT":"0.5909088433510143-10"},{"ELEMENT":"0.5909088433510143-11"},{"ELEMENT":"0.5909088433510143-12"}]
+[17:29:11]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:11]  DATA		{"using":"css selector","value":"p[class=\"sub-title css-1fnocij\"]"}
+[17:29:11]  RESULT		[{"ELEMENT":"0.5909088433510143-9"},{"ELEMENT":"0.5909088433510143-10"},{"ELEMENT":"0.5909088433510143-11"},{"ELEMENT":"0.5909088433510143-12"}]
+[17:29:11]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.5909088433510143-12/text"
+[17:29:11]  DATA		{}
+[17:29:11]  RESULT		"Number of unique buyers"
+[17:29:11]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:11]  DATA		{"using":"css selector","value":"p[class=\"sub-title css-1fnocij\"]"}
+[17:29:11]  RESULT		[{"ELEMENT":"0.5909088433510143-9"},{"ELEMENT":"0.5909088433510143-10"},{"ELEMENT":"0.5909088433510143-11"},{"ELEMENT":"0.5909088433510143-12"}]
+[17:29:11]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:11]  DATA		{"using":"css selector","value":"span[class=\"currency css-401vsu\"]"}
+[17:29:11]  RESULT		[]
+[17:29:11]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/execute"
+[17:29:11]  DATA		{"script":"return (function () {\n            localStorage.clear();\n            sessionStorage.clear();\n        }).apply(null, arguments)","args":[]}
+[17:29:11]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/url"
+[17:29:11]  DATA		{"url":"https://qa.ckotech.co/v2/login"}
+[17:29:12]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element"
+[17:29:12]  DATA		{"using":"css selector","value":"input[type=\"email\"]"}
+[17:29:12]  RESULT		{"ELEMENT":"0.19417540777094278-1"}
+[17:29:12]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.19417540777094278-1/clear"
+[17:29:12]  DATA		{}
+[17:29:12]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.19417540777094278-1/value"
+[17:29:12]  DATA		{"value":["q","a","_","e","m","a","i","l","+","c","(21 more items)"],"text":"qa_email+chimpread@checkout.com"}
+[17:29:12]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element"
+[17:29:12]  DATA		{"using":"css selector","value":"input[type=\"password\"]"}
+[17:29:12]  RESULT		{"ELEMENT":"0.19417540777094278-2"}
+[17:29:12]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.19417540777094278-2/clear"
+[17:29:12]  DATA		{}
+[17:29:12]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.19417540777094278-2/value"
+[17:29:12]  DATA		{"value":["C","h","e","c","k","o","u","t","_","1","(2 more items)"],"text":"Checkout_123"}
+[17:29:12]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element"
+[17:29:12]  DATA		{"using":"css selector","value":"[value=\"Log in\"]"}
+[17:29:12]  RESULT		{"ELEMENT":"0.19417540777094278-3"}
+[17:29:12]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.19417540777094278-3/click"
+[17:29:12]  DATA		{}
+[17:29:12]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/url"
+[17:29:12]  DATA		{}
+[17:29:12]  RESULT		"https://qa.ckotech.co/v2/login"
+[17:29:12]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/url"
+[17:29:12]  DATA		{}
+[17:29:12]  RESULT		"https://qa.ckotech.co/v2/login"
+[17:29:13]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/url"
+[17:29:13]  DATA		{}
+[17:29:13]  RESULT		"https://qa.ckotech.co/v2/dashboard"
+[17:29:14]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element"
+[17:29:14]  DATA		{"using":"css selector","value":"[id = \"kpi-title\"]"}
+[17:29:14]  RESULT		{"ELEMENT":"0.19417540777094278-4"}
+[17:29:14]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.19417540777094278-4/text"
+[17:29:14]  DATA		{}
+[17:29:14]  RESULT		"Key performance indicators"
+[17:29:19]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element"
+[17:29:19]  DATA		{"using":"css selector","value":"[id=\"kpi-title\"]"}
+[17:29:19]  RESULT		{"ELEMENT":"0.19417540777094278-4"}
+[17:29:19]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.19417540777094278-4/text"
+[17:29:19]  DATA		{}
+[17:29:19]  RESULT		"Key performance indicators"
+[17:29:19]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:19]  DATA		{"using":"css selector","value":"[class=\"title css-1wplclg\"]"}
+[17:29:19]  RESULT		[{"ELEMENT":"0.19417540777094278-5"},{"ELEMENT":"0.19417540777094278-6"},{"ELEMENT":"0.19417540777094278-7"},{"ELEMENT":"0.19417540777094278-8"}]
+[17:29:19]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:19]  DATA		{"using":"css selector","value":"[class=\"title css-1wplclg\"]"}
+[17:29:19]  RESULT		[{"ELEMENT":"0.19417540777094278-5"},{"ELEMENT":"0.19417540777094278-6"},{"ELEMENT":"0.19417540777094278-7"},{"ELEMENT":"0.19417540777094278-8"}]
+[17:29:19]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.19417540777094278-5/text"
+[17:29:19]  DATA		{}
+[17:29:19]  RESULT		"Total revenue"
+[17:29:19]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:19]  DATA		{"using":"css selector","value":"[class=\"title css-1wplclg\"]"}
+[17:29:19]  RESULT		[{"ELEMENT":"0.19417540777094278-5"},{"ELEMENT":"0.19417540777094278-6"},{"ELEMENT":"0.19417540777094278-7"},{"ELEMENT":"0.19417540777094278-8"}]
+[17:29:19]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:19]  DATA		{"using":"css selector","value":"[class=\"title css-1wplclg\"]"}
+[17:29:19]  RESULT		[{"ELEMENT":"0.19417540777094278-5"},{"ELEMENT":"0.19417540777094278-6"},{"ELEMENT":"0.19417540777094278-7"},{"ELEMENT":"0.19417540777094278-8"}]
+[17:29:19]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.19417540777094278-6/text"
+[17:29:19]  DATA		{}
+[17:29:19]  RESULT		"Net revenue"
+[17:29:19]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:19]  DATA		{"using":"css selector","value":"[class=\"title css-1wplclg\"]"}
+[17:29:19]  RESULT		[{"ELEMENT":"0.19417540777094278-5"},{"ELEMENT":"0.19417540777094278-6"},{"ELEMENT":"0.19417540777094278-7"},{"ELEMENT":"0.19417540777094278-8"}]
+[17:29:19]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:19]  DATA		{"using":"css selector","value":"[class=\"title css-1wplclg\"]"}
+[17:29:19]  RESULT		[{"ELEMENT":"0.19417540777094278-5"},{"ELEMENT":"0.19417540777094278-6"},{"ELEMENT":"0.19417540777094278-7"},{"ELEMENT":"0.19417540777094278-8"}]
+[17:29:19]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.19417540777094278-7/text"
+[17:29:19]  DATA		{}
+[17:29:19]  RESULT		"Approved sales"
+[17:29:19]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:19]  DATA		{"using":"css selector","value":"[class=\"title css-1wplclg\"]"}
+[17:29:19]  RESULT		[{"ELEMENT":"0.19417540777094278-5"},{"ELEMENT":"0.19417540777094278-6"},{"ELEMENT":"0.19417540777094278-7"},{"ELEMENT":"0.19417540777094278-8"}]
+[17:29:19]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:19]  DATA		{"using":"css selector","value":"[class=\"title css-1wplclg\"]"}
+[17:29:19]  RESULT		[{"ELEMENT":"0.19417540777094278-5"},{"ELEMENT":"0.19417540777094278-6"},{"ELEMENT":"0.19417540777094278-7"},{"ELEMENT":"0.19417540777094278-8"}]
+[17:29:19]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.19417540777094278-8/text"
+[17:29:19]  DATA		{}
+[17:29:19]  RESULT		"Customers"
+[17:29:19]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:19]  DATA		{"using":"css selector","value":"[class=\"title css-1wplclg\"]"}
+[17:29:19]  RESULT		[{"ELEMENT":"0.19417540777094278-5"},{"ELEMENT":"0.19417540777094278-6"},{"ELEMENT":"0.19417540777094278-7"},{"ELEMENT":"0.19417540777094278-8"}]
+[17:29:19]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:19]  DATA		{"using":"css selector","value":"p[class=\"sub-title css-1fnocij\"]"}
+[17:29:19]  RESULT		[{"ELEMENT":"0.19417540777094278-9"},{"ELEMENT":"0.19417540777094278-10"},{"ELEMENT":"0.19417540777094278-11"},{"ELEMENT":"0.19417540777094278-12"}]
+[17:29:19]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:19]  DATA		{"using":"css selector","value":"p[class=\"sub-title css-1fnocij\"]"}
+[17:29:19]  RESULT		[{"ELEMENT":"0.19417540777094278-9"},{"ELEMENT":"0.19417540777094278-10"},{"ELEMENT":"0.19417540777094278-11"},{"ELEMENT":"0.19417540777094278-12"}]
+[17:29:19]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.19417540777094278-9/text"
+[17:29:19]  DATA		{}
+[17:29:19]  RESULT		"Including all captured payments"
+[17:29:19]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:19]  DATA		{"using":"css selector","value":"p[class=\"sub-title css-1fnocij\"]"}
+[17:29:19]  RESULT		[{"ELEMENT":"0.19417540777094278-9"},{"ELEMENT":"0.19417540777094278-10"},{"ELEMENT":"0.19417540777094278-11"},{"ELEMENT":"0.19417540777094278-12"}]
+[17:29:19]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:19]  DATA		{"using":"css selector","value":"p[class=\"sub-title css-1fnocij\"]"}
+[17:29:19]  RESULT		[{"ELEMENT":"0.19417540777094278-9"},{"ELEMENT":"0.19417540777094278-10"},{"ELEMENT":"0.19417540777094278-11"},{"ELEMENT":"0.19417540777094278-12"}]
+[17:29:19]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.19417540777094278-10/text"
+[17:29:19]  DATA		{}
+[17:29:19]  RESULT		"Total revenue minus refunds and chargebacks"
+[17:29:19]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:19]  DATA		{"using":"css selector","value":"p[class=\"sub-title css-1fnocij\"]"}
+[17:29:19]  RESULT		[{"ELEMENT":"0.19417540777094278-9"},{"ELEMENT":"0.19417540777094278-10"},{"ELEMENT":"0.19417540777094278-11"},{"ELEMENT":"0.19417540777094278-12"}]
+[17:29:19]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:19]  DATA		{"using":"css selector","value":"p[class=\"sub-title css-1fnocij\"]"}
+[17:29:19]  RESULT		[{"ELEMENT":"0.19417540777094278-9"},{"ELEMENT":"0.19417540777094278-10"},{"ELEMENT":"0.19417540777094278-11"},{"ELEMENT":"0.19417540777094278-12"}]
+[17:29:19]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.19417540777094278-11/text"
+[17:29:19]  DATA		{}
+[17:29:19]  RESULT		"Number of captured payments"
+[17:29:19]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:19]  DATA		{"using":"css selector","value":"p[class=\"sub-title css-1fnocij\"]"}
+[17:29:19]  RESULT		[{"ELEMENT":"0.19417540777094278-9"},{"ELEMENT":"0.19417540777094278-10"},{"ELEMENT":"0.19417540777094278-11"},{"ELEMENT":"0.19417540777094278-12"}]
+[17:29:19]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:19]  DATA		{"using":"css selector","value":"p[class=\"sub-title css-1fnocij\"]"}
+[17:29:19]  RESULT		[{"ELEMENT":"0.19417540777094278-9"},{"ELEMENT":"0.19417540777094278-10"},{"ELEMENT":"0.19417540777094278-11"},{"ELEMENT":"0.19417540777094278-12"}]
+[17:29:19]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.19417540777094278-12/text"
+[17:29:19]  DATA		{}
+[17:29:19]  RESULT		"Number of unique buyers"
+[17:29:19]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:19]  DATA		{"using":"css selector","value":"p[class=\"sub-title css-1fnocij\"]"}
+[17:29:19]  RESULT		[{"ELEMENT":"0.19417540777094278-9"},{"ELEMENT":"0.19417540777094278-10"},{"ELEMENT":"0.19417540777094278-11"},{"ELEMENT":"0.19417540777094278-12"}]
+[17:29:19]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/elements"
+[17:29:19]  DATA		{"using":"css selector","value":"span[class=\"currency css-401vsu\"]"}
+[17:29:19]  RESULT		[]
+[17:29:19]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/execute"
+[17:29:19]  DATA		{"script":"return (function () {\n            localStorage.clear();\n            sessionStorage.clear();\n        }).apply(null, arguments)","args":[]}
+[17:29:19]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/url"
+[17:29:19]  DATA		{"url":"https://qa.ckotech.co/v2/login"}
+[17:29:20]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element"
+[17:29:20]  DATA		{"using":"css selector","value":"input[type=\"email\"]"}
+[17:29:20]  RESULT		{"ELEMENT":"0.798861133364154-1"}
+[17:29:20]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.798861133364154-1/clear"
+[17:29:20]  DATA		{}
+[17:29:20]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.798861133364154-1/value"
+[17:29:20]  DATA		{"value":["q","a","_","e","m","a","i","l","+","c","(22 more items)"],"text":"qa_email+chimpAdmin@checkout.com"}
+[17:29:20]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element"
+[17:29:20]  DATA		{"using":"css selector","value":"input[type=\"password\"]"}
+[17:29:20]  RESULT		{"ELEMENT":"0.798861133364154-2"}
+[17:29:20]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.798861133364154-2/clear"
+[17:29:20]  DATA		{}
+[17:29:20]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.798861133364154-2/value"
+[17:29:20]  DATA		{"value":["C","h","e","c","k","o","u","t","_","1","(2 more items)"],"text":"Checkout_123"}
+[17:29:20]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element"
+[17:29:20]  DATA		{"using":"css selector","value":"[value=\"Log in\"]"}
+[17:29:20]  RESULT		{"ELEMENT":"0.798861133364154-3"}
+[17:29:20]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.798861133364154-3/click"
+[17:29:20]  DATA		{}
+[17:29:20]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/url"
+[17:29:20]  DATA		{}
+[17:29:20]  RESULT		"https://qa.ckotech.co/v2/login"
+[17:29:20]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/url"
+[17:29:20]  DATA		{}
+[17:29:20]  RESULT		"https://qa.ckotech.co/v2/login"
+[17:29:21]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/url"
+[17:29:21]  DATA		{}
+[17:29:21]  RESULT		"https://qa.ckotech.co/v2/dashboard"
+[17:29:22]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element"
+[17:29:22]  DATA		{"using":"css selector","value":"[id = \"kpi-title\"]"}
+[17:29:22]  RESULT		{"ELEMENT":"0.798861133364154-4"}
+[17:29:22]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.798861133364154-4/text"
+[17:29:22]  DATA		{}
+[17:29:22]  RESULT		"Key performance indicators"
+[17:29:22]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element"
+[17:29:22]  DATA		{"using":"css selector","value":"a[class=\"tableTab active\"]"}
+[17:29:22]  RESULT		{"ELEMENT":"0.798861133364154-5"}
+[17:29:22]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.798861133364154-5/text"
+[17:29:22]  DATA		{}
+[17:29:22]  RESULT		"Payment methods"
+[17:29:27]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element"
+[17:29:27]  DATA		{"using":"css selector","value":"thead > tr > th:nth-child(1) > span"}
+[17:29:27]  RESULT		{"ELEMENT":"0.798861133364154-6"}
+[17:29:27]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.798861133364154-6/text"
+[17:29:27]  DATA		{}
+[17:29:27]  RESULT		"Payment method"
+[17:29:27]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element"
+[17:29:27]  DATA		{"using":"css selector","value":"thead > tr > th:nth-child(2) > span"}
+[17:29:27]  RESULT		{"ELEMENT":"0.798861133364154-7"}
+[17:29:27]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.798861133364154-7/text"
+[17:29:27]  DATA		{}
+[17:29:27]  RESULT		"Revenue GBP"
+[17:29:27]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/execute"
+[17:29:27]  DATA		{"script":"return (function () {\n            localStorage.clear();\n            sessionStorage.clear();\n        }).apply(null, arguments)","args":[]}
+[17:29:27]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/url"
+[17:29:27]  DATA		{"url":"https://qa.ckotech.co/v2/login"}
+[17:29:27]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element"
+[17:29:27]  DATA		{"using":"css selector","value":"input[type=\"email\"]"}
+[17:29:27]  RESULT		{"ELEMENT":"0.7028934680028083-1"}
+[17:29:27]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.7028934680028083-1/clear"
+[17:29:27]  DATA		{}
+[17:29:27]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.7028934680028083-1/value"
+[17:29:27]  DATA		{"value":["q","a","_","e","m","a","i","l","+","c","(21 more items)"],"text":"qa_email+chimpread@checkout.com"}
+[17:29:28]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element"
+[17:29:28]  DATA		{"using":"css selector","value":"input[type=\"password\"]"}
+[17:29:28]  RESULT		{"ELEMENT":"0.7028934680028083-2"}
+[17:29:28]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.7028934680028083-2/clear"
+[17:29:28]  DATA		{}
+[17:29:28]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.7028934680028083-2/value"
+[17:29:28]  DATA		{"value":["C","h","e","c","k","o","u","t","_","1","(2 more items)"],"text":"Checkout_123"}
+[17:29:28]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element"
+[17:29:28]  DATA		{"using":"css selector","value":"[value=\"Log in\"]"}
+[17:29:28]  RESULT		{"ELEMENT":"0.7028934680028083-3"}
+[17:29:28]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.7028934680028083-3/click"
+[17:29:28]  DATA		{}
+[17:29:28]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/url"
+[17:29:28]  DATA		{}
+[17:29:28]  RESULT		"https://qa.ckotech.co/v2/login"
+[17:29:28]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/url"
+[17:29:28]  DATA		{}
+[17:29:28]  RESULT		"https://qa.ckotech.co/v2/login"
+[17:29:28]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/url"
+[17:29:28]  DATA		{}
+[17:29:28]  RESULT		"https://qa.ckotech.co/v2/dashboard"
+[17:29:30]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element"
+[17:29:30]  DATA		{"using":"css selector","value":"[id = \"kpi-title\"]"}
+[17:29:30]  RESULT		{"ELEMENT":"0.7028934680028083-4"}
+[17:29:30]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.7028934680028083-4/text"
+[17:29:30]  DATA		{}
+[17:29:30]  RESULT		"Key performance indicators"
+[17:29:30]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element"
+[17:29:30]  DATA		{"using":"css selector","value":"a[class=\"tableTab active\"]"}
+[17:29:30]  RESULT		{"ELEMENT":"0.7028934680028083-5"}
+[17:29:30]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.7028934680028083-5/text"
+[17:29:30]  DATA		{}
+[17:29:30]  RESULT		"Payment methods"
+[17:29:35]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element"
+[17:29:35]  DATA		{"using":"css selector","value":"thead > tr > th:nth-child(1) > span"}
+[17:29:35]  RESULT		{"ELEMENT":"0.7028934680028083-6"}
+[17:29:35]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.7028934680028083-6/text"
+[17:29:35]  DATA		{}
+[17:29:35]  RESULT		"Payment method"
+[17:29:35]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element"
+[17:29:35]  DATA		{"using":"css selector","value":"thead > tr > th:nth-child(2) > span"}
+[17:29:35]  RESULT		{"ELEMENT":"0.7028934680028083-7"}
+[17:29:35]  COMMAND	GET 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/element/0.7028934680028083-7/text"
+[17:29:35]  DATA		{}
+[17:29:35]  RESULT		"Revenue GBP"
+[17:29:35]  COMMAND	POST 	 "/wd/hub/session/58d70dc19431628b2cba575ecc34e427/execute"
+[17:29:35]  DATA		{"script":"return (function () {\n            localStorage.clear();\n            sessionStorage.clear();\n        }).apply(null, arguments)","args":[]}

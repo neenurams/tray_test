@@ -1,0 +1,19 @@
+[14:01:43]  COMMAND	GET 	 "/wd/hub/status"
+[14:01:43]  DATA		{}
+[14:01:43]  RESULT		{"build":{"version":"alpha"},"os":{"arch":"x86_64","name":"Mac OS X","version":"10.13.4"}}
+[14:01:43]  COMMAND	POST 	 "/wd/hub/session"
+[14:01:43]  DATA		{"desiredCapabilities":{"javascriptEnabled":true,"locationContextEnabled":true,"handlesAlerts":true,"rotatable":true,"chromeOptions":{"prefs":{"profile.default_content_settings.popups":0,"download.default_directory":"test/e2e_downloads"},"args":["disable-gpu","window-size=1920x1080","no-sandbox"]},"isHeadless":false,"browserName":"chrome","platform":"ANY","name":"","loggingPrefs":{"browser":"ALL","driver":"ALL"},"_":"1 more keys: [\"requestOrigins\"]"}}
+[14:01:45]  INFO	SET SESSION ID 54032610d75785981648cc97a9514e9f
+[14:01:45]  RESULT		{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db)","userDataDir":"/var/folders/zd/m442nyf515nfj63pgsj132f00000gp/T/.org.chromium.Chromium.0yKP6P"},"cssSelectorsEnabled":true,"databaseEnabled":false,"goog:chromeOptions":{"debuggerAddress":"localhost:49612"},"handlesAlerts":true,"hasTouchScreen":false,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platform":"Mac OS X","rotatable":false,"setWindowRect":true,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"69.0.3497.100","webStorageEnabled":true}
+[14:01:45]  COMMAND	POST 	 "/wd/hub/session/54032610d75785981648cc97a9514e9f/url"
+[14:01:45]  DATA		{"url":"https://qa.ckotech.co/v2/login"}
+[14:01:48]  COMMAND	POST 	 "/wd/hub/session/54032610d75785981648cc97a9514e9f/element"
+[14:01:48]  DATA		{"using":"css selector","value":"[class=ant-input-suffix]"}
+[14:01:48]  RESULT		{"ELEMENT":"0.4843449268883053-1"}
+[14:01:48]  COMMAND	POST 	 "/wd/hub/session/54032610d75785981648cc97a9514e9f/element/0.4843449268883053-1/click"
+[14:01:48]  DATA		{}
+[14:01:50]  COMMAND	GET 	 "/wd/hub/session/54032610d75785981648cc97a9514e9f/url"
+[14:01:50]  DATA		{}
+[14:01:50]  RESULT		"https://qa.ckotech.co/v2/forgot-password"
+[14:01:50]  COMMAND	POST 	 "/wd/hub/session/54032610d75785981648cc97a9514e9f/execute"
+[14:01:50]  DATA		{"script":"return (function () {\n            localStorage.clear();\n            sessionStorage.clear();\n        }).apply(null, arguments)","args":[]}

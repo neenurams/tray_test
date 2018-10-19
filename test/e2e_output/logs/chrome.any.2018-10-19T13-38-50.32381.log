@@ -1,0 +1,96 @@
+[14:38:50]  COMMAND	GET 	 "/wd/hub/status"
+[14:38:50]  DATA		{}
+[14:38:50]  RESULT		{"build":{"version":"alpha"},"os":{"arch":"x86_64","name":"Mac OS X","version":"10.13.4"}}
+[14:38:50]  COMMAND	POST 	 "/wd/hub/session"
+[14:38:50]  DATA		{"desiredCapabilities":{"javascriptEnabled":true,"locationContextEnabled":true,"handlesAlerts":true,"rotatable":true,"chromeOptions":{"prefs":{"profile.default_content_settings.popups":0,"download.default_directory":"test/e2e_downloads"},"args":["disable-gpu","window-size=1920x1080","no-sandbox"]},"isHeadless":false,"browserName":"chrome","platform":"ANY","name":"","loggingPrefs":{"browser":"ALL","driver":"ALL"},"_":"1 more keys: [\"requestOrigins\"]"}}
+[14:38:51]  INFO	SET SESSION ID d09d81f601143faccb81909938096b34
+[14:38:51]  RESULT		{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052)","userDataDir":"/var/folders/zd/m442nyf515nfj63pgsj132f00000gp/T/.org.chromium.Chromium.RlOLgl"},"cssSelectorsEnabled":true,"databaseEnabled":false,"goog:chromeOptions":{"debuggerAddress":"localhost:54934"},"handlesAlerts":true,"hasTouchScreen":false,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platform":"Mac OS X","rotatable":false,"setWindowRect":true,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"69.0.3497.100","webStorageEnabled":true}
+[14:38:51]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/url"
+[14:38:51]  DATA		{"url":"https://app.tray.io/login"}
+[14:38:59]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element"
+[14:38:59]  DATA		{"using":"css selector","value":"input[name=\"username\"]"}
+[14:38:59]  RESULT		{"ELEMENT":"0.9457571803795488-1"}
+[14:38:59]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element/0.9457571803795488-1/clear"
+[14:38:59]  DATA		{}
+[14:38:59]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element/0.9457571803795488-1/value"
+[14:38:59]  DATA		{"value":["n","e","e","n","u",".","r","5","6","7","(10 more items)"],"text":"neenu.r567@gmail.com"}
+[14:39:00]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element"
+[14:39:00]  DATA		{"using":"css selector","value":"input[type=\"password\"]"}
+[14:39:00]  RESULT		{"ELEMENT":"0.9457571803795488-2"}
+[14:39:00]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element/0.9457571803795488-2/clear"
+[14:39:00]  DATA		{}
+[14:39:00]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element/0.9457571803795488-2/value"
+[14:39:00]  DATA		{"value":["t","e","s","t","_","t","r","a","y"],"text":"test_tray"}
+[14:39:00]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element"
+[14:39:00]  DATA		{"using":"css selector","value":"[type=\"submit\"]"}
+[14:39:00]  RESULT		{"ELEMENT":"0.9457571803795488-3"}
+[14:39:00]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element/0.9457571803795488-3/click"
+[14:39:00]  DATA		{}
+[14:39:10]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element"
+[14:39:10]  DATA		{"using":"css selector","value":"[href=\"/create\"]"}
+[14:39:10]  RESULT		{"ELEMENT":"0.37009287425330606-1"}
+[14:39:10]  COMMAND	GET 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element/0.37009287425330606-1/text"
+[14:39:10]  DATA		{}
+[14:39:10]  RESULT		"CREATE NEW WORKFLOW"
+[14:39:10]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element"
+[14:39:10]  DATA		{"using":"css selector","value":"[href=\"/create\"]"}
+[14:39:10]  RESULT		{"ELEMENT":"0.37009287425330606-1"}
+[14:39:10]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element/0.37009287425330606-1/click"
+[14:39:10]  DATA		{}
+[14:39:10]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element"
+[14:39:10]  DATA		{"using":"css selector","value":"input[name=\"name\"]"}
+[14:39:10]  RESULT		{"ELEMENT":"0.37009287425330606-2"}
+[14:39:10]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element/0.37009287425330606-2/clear"
+[14:39:10]  DATA		{}
+[14:39:10]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element/0.37009287425330606-2/value"
+[14:39:10]  DATA		{"value":["h","e","l","l","o"],"text":"hello"}
+[14:39:10]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element"
+[14:39:10]  DATA		{"using":"css selector","value":"[title=\"Create\"]"}
+[14:39:10]  RESULT		{"ELEMENT":"0.37009287425330606-3"}
+[14:39:10]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element/0.37009287425330606-3/click"
+[14:39:10]  DATA		{}
+[14:39:20]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element"
+[14:39:20]  DATA		{"using":"css selector","value":".Connectors-grid-element___207RbN"}
+[14:39:20]  RESULT		{"ELEMENT":"0.37009287425330606-4"}
+[14:39:20]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element/0.37009287425330606-4/click"
+[14:39:20]  DATA		{}
+[14:39:31]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element"
+[14:39:31]  DATA		{"using":"css selector","value":"[title=\"Close\"]"}
+[14:39:31]  RESULT		{"ELEMENT":"0.37009287425330606-5"}
+[14:39:31]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element/0.37009287425330606-5/click"
+[14:39:31]  DATA		{}
+[14:39:41]  COMMAND	GET 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/url"
+[14:39:41]  DATA		{}
+[14:39:41]  RESULT		"https://app.tray.io/"
+[14:39:41]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element"
+[14:39:41]  DATA		{"using":"css selector","value":"[class=\"Options-menu___2xCHNh Options-menu--right___2b16vG\"]"}
+[14:39:41]  RESULT		{"ELEMENT":"0.37009287425330606-6"}
+[14:39:41]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element/0.37009287425330606-6/click"
+[14:39:41]  DATA		{}
+[14:39:41]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element"
+[14:39:41]  DATA		{"using":"css selector","value":".delete-button"}
+[14:39:41]  RESULT		{"ELEMENT":"0.37009287425330606-7"}
+[14:39:41]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element/0.37009287425330606-7/click"
+[14:39:41]  DATA		{}
+[14:39:46]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element"
+[14:39:46]  DATA		{"using":"css selector","value":"[title=\"Yes\"]"}
+[14:39:46]  RESULT		{"ELEMENT":"0.37009287425330606-8"}
+[14:39:46]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/moveto"
+[14:39:46]  DATA		{"element":"0.37009287425330606-8"}
+[14:39:47]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/doubleclick"
+[14:39:47]  DATA		{}
+[14:39:52]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element"
+[14:39:52]  DATA		{"using":"css selector","value":"[id=avatar"}
+[14:39:52]  RESULT		{"ELEMENT":"0.37009287425330606-9"}
+[14:39:52]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element/0.37009287425330606-9/click"
+[14:39:52]  DATA		{}
+[14:39:57]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element"
+[14:39:57]  DATA		{"using":"css selector","value":"[href=\"/logout\"]"}
+[14:39:57]  RESULT		{"ELEMENT":"0.37009287425330606-10"}
+[14:39:57]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/element/0.37009287425330606-10/click"
+[14:39:57]  DATA		{}
+[14:40:02]  COMMAND	GET 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/url"
+[14:40:02]  DATA		{}
+[14:40:02]  RESULT		"https://app.tray.io/login"
+[14:40:02]  COMMAND	POST 	 "/wd/hub/session/d09d81f601143faccb81909938096b34/execute"
+[14:40:02]  DATA		{"script":"return (function () {\n            localStorage.clear();\n            sessionStorage.clear();\n        }).apply(null, arguments)","args":[]}

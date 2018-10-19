@@ -1,0 +1,36 @@
+[14:32:57]  COMMAND	GET 	 "/wd/hub/status"
+[14:32:57]  DATA		{}
+[14:32:57]  RESULT		{"build":{"version":"alpha"},"os":{"arch":"x86_64","name":"Mac OS X","version":"10.13.4"}}
+[14:32:57]  COMMAND	POST 	 "/wd/hub/session"
+[14:32:57]  DATA		{"desiredCapabilities":{"javascriptEnabled":true,"locationContextEnabled":true,"handlesAlerts":true,"rotatable":true,"chromeOptions":{"prefs":{"profile.default_content_settings.popups":0,"download.default_directory":"test/e2e_downloads"},"args":["headless","disable-gpu","window-size=1920x1080","no-sandbox"]},"isHeadless":true,"browserName":"chrome","platform":"ANY","name":"","loggingPrefs":{"browser":"ALL","driver":"ALL"},"_":"1 more keys: [\"requestOrigins\"]"}}
+[14:32:57]  INFO	SET SESSION ID bd86c6fa3c07cdbf1f5663cdfcdf38a3
+[14:32:57]  RESULT		{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db)","userDataDir":"/var/folders/zd/m442nyf515nfj63pgsj132f00000gp/T/.org.chromium.Chromium.UYx7YA"},"cssSelectorsEnabled":true,"databaseEnabled":false,"goog:chromeOptions":{"debuggerAddress":"localhost:54776"},"handlesAlerts":true,"hasTouchScreen":false,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platform":"Mac OS X","rotatable":false,"setWindowRect":true,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"69.0.3497.100","webStorageEnabled":true}
+[14:32:57]  COMMAND	POST 	 "/wd/hub/session/bd86c6fa3c07cdbf1f5663cdfcdf38a3/url"
+[14:32:57]  DATA		{"url":"https://qa.ckotech.co/v2/login"}
+[14:32:59]  COMMAND	POST 	 "/wd/hub/session/bd86c6fa3c07cdbf1f5663cdfcdf38a3/element"
+[14:32:59]  DATA		{"using":"css selector","value":"input[type=\"email\"]"}
+[14:32:59]  RESULT		{"ELEMENT":"0.07825750184148905-1"}
+[14:32:59]  COMMAND	POST 	 "/wd/hub/session/bd86c6fa3c07cdbf1f5663cdfcdf38a3/element/0.07825750184148905-1/clear"
+[14:32:59]  DATA		{}
+[14:32:59]  COMMAND	POST 	 "/wd/hub/session/bd86c6fa3c07cdbf1f5663cdfcdf38a3/element/0.07825750184148905-1/value"
+[14:32:59]  DATA		{"value":["q","a","_","e","m","a","i","l","+","w","(17 more items)"],"text":"qa_email+write@checkout.com"}
+[14:32:59]  COMMAND	POST 	 "/wd/hub/session/bd86c6fa3c07cdbf1f5663cdfcdf38a3/element"
+[14:32:59]  DATA		{"using":"css selector","value":"input[type=\"password\"]"}
+[14:32:59]  RESULT		{"ELEMENT":"0.07825750184148905-2"}
+[14:32:59]  COMMAND	POST 	 "/wd/hub/session/bd86c6fa3c07cdbf1f5663cdfcdf38a3/element/0.07825750184148905-2/clear"
+[14:32:59]  DATA		{}
+[14:32:59]  COMMAND	POST 	 "/wd/hub/session/bd86c6fa3c07cdbf1f5663cdfcdf38a3/element/0.07825750184148905-2/value"
+[14:32:59]  DATA		{"value":["C","h","e","c","k","o","u","t","_","1","(2 more items)"],"text":"Checkout_123"}
+[14:33:00]  COMMAND	POST 	 "/wd/hub/session/bd86c6fa3c07cdbf1f5663cdfcdf38a3/element"
+[14:33:00]  DATA		{"using":"css selector","value":"[value=\"Log in\"]"}
+[14:33:00]  RESULT		{"ELEMENT":"0.07825750184148905-3"}
+[14:33:00]  COMMAND	POST 	 "/wd/hub/session/bd86c6fa3c07cdbf1f5663cdfcdf38a3/element/0.07825750184148905-3/click"
+[14:33:00]  DATA		{}
+[14:33:00]  COMMAND	POST 	 "/wd/hub/session/bd86c6fa3c07cdbf1f5663cdfcdf38a3/element"
+[14:33:00]  DATA		{"using":"css selector","value":"[class=\"main-title\"]"}
+[14:33:00]  COMMAND	GET 	 "/wd/hub/session/bd86c6fa3c07cdbf1f5663cdfcdf38a3/screenshot"
+[14:33:00]  DATA		{}
+[14:33:00]  RESULT		"iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4CAYAAADo08FDAAAgAElEQVR4nOzdPYhleV7H4d8599yX6rfZnWYYERFmnWRZA1HEQVDcQBA0VRRBDAyNDM2NjEzEDURDAzNjQTdQUUQExWQ30cXAZWfWme6qe+95M7i3qrv6ZaqrbLamvjxP1FV9zr/OvSc6fPj9T/Ppk6d ... (24358 more bytes)
+[14:33:00]  	Saved screenshot: ERROR_chrome.any_2018-09-21T13-33-00.286Z.png
+[14:33:00]  COMMAND	POST 	 "/wd/hub/session/bd86c6fa3c07cdbf1f5663cdfcdf38a3/execute"
+[14:33:00]  DATA		{"script":"return (function () {\n            localStorage.clear();\n            sessionStorage.clear();\n        }).apply(null, arguments)","args":[]}

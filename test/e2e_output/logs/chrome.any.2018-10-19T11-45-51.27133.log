@@ -1,0 +1,59 @@
+[12:45:51]  COMMAND	GET 	 "/wd/hub/status"
+[12:45:51]  DATA		{}
+[12:45:51]  RESULT		{"build":{"version":"alpha"},"os":{"arch":"x86_64","name":"Mac OS X","version":"10.13.4"}}
+[12:45:51]  COMMAND	POST 	 "/wd/hub/session"
+[12:45:51]  DATA		{"desiredCapabilities":{"javascriptEnabled":true,"locationContextEnabled":true,"handlesAlerts":true,"rotatable":true,"chromeOptions":{"prefs":{"profile.default_content_settings.popups":0,"download.default_directory":"test/e2e_downloads"},"args":["disable-gpu","window-size=1920x1080","no-sandbox"]},"isHeadless":false,"browserName":"chrome","platform":"ANY","name":"","loggingPrefs":{"browser":"ALL","driver":"ALL"},"_":"1 more keys: [\"requestOrigins\"]"}}
+[12:45:52]  INFO	SET SESSION ID 7a8557915bb11fb50e88f82f53bc1b65
+[12:45:52]  RESULT		{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052)","userDataDir":"/var/folders/zd/m442nyf515nfj63pgsj132f00000gp/T/.org.chromium.Chromium.GJSQQa"},"cssSelectorsEnabled":true,"databaseEnabled":false,"goog:chromeOptions":{"debuggerAddress":"localhost:57032"},"handlesAlerts":true,"hasTouchScreen":false,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platform":"Mac OS X","rotatable":false,"setWindowRect":true,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"69.0.3497.100","webStorageEnabled":true}
+[12:45:52]  COMMAND	POST 	 "/wd/hub/session/7a8557915bb11fb50e88f82f53bc1b65/url"
+[12:45:52]  DATA		{"url":"https://app.tray.io/login"}
+[12:46:01]  COMMAND	POST 	 "/wd/hub/session/7a8557915bb11fb50e88f82f53bc1b65/element"
+[12:46:01]  DATA		{"using":"css selector","value":"input[name=\"username\"]"}
+[12:46:01]  RESULT		{"ELEMENT":"0.9889419763941683-1"}
+[12:46:01]  COMMAND	POST 	 "/wd/hub/session/7a8557915bb11fb50e88f82f53bc1b65/element/0.9889419763941683-1/clear"
+[12:46:01]  DATA		{}
+[12:46:02]  COMMAND	POST 	 "/wd/hub/session/7a8557915bb11fb50e88f82f53bc1b65/element/0.9889419763941683-1/value"
+[12:46:02]  DATA		{"value":["n","e","e","n","u",".","r","5","6","7","(10 more items)"],"text":"neenu.r567@gmail.com"}
+[12:46:02]  COMMAND	POST 	 "/wd/hub/session/7a8557915bb11fb50e88f82f53bc1b65/element"
+[12:46:02]  DATA		{"using":"css selector","value":"input[type=\"password\"]"}
+[12:46:02]  RESULT		{"ELEMENT":"0.9889419763941683-2"}
+[12:46:02]  COMMAND	POST 	 "/wd/hub/session/7a8557915bb11fb50e88f82f53bc1b65/element/0.9889419763941683-2/clear"
+[12:46:02]  DATA		{}
+[12:46:02]  COMMAND	POST 	 "/wd/hub/session/7a8557915bb11fb50e88f82f53bc1b65/element/0.9889419763941683-2/value"
+[12:46:02]  DATA		{"value":["t","e","s","t","_","t","r","a","y"],"text":"test_tray"}
+[12:46:02]  COMMAND	POST 	 "/wd/hub/session/7a8557915bb11fb50e88f82f53bc1b65/element"
+[12:46:02]  DATA		{"using":"css selector","value":"[type=\"submit\"]"}
+[12:46:02]  RESULT		{"ELEMENT":"0.9889419763941683-3"}
+[12:46:02]  COMMAND	POST 	 "/wd/hub/session/7a8557915bb11fb50e88f82f53bc1b65/element/0.9889419763941683-3/click"
+[12:46:02]  DATA		{}
+[12:46:07]  COMMAND	POST 	 "/wd/hub/session/7a8557915bb11fb50e88f82f53bc1b65/element"
+[12:46:07]  DATA		{"using":"css selector","value":"[href=\"/create\"]"}
+[12:46:08]  RESULT		{"ELEMENT":"0.17728664792034232-1"}
+[12:46:08]  COMMAND	GET 	 "/wd/hub/session/7a8557915bb11fb50e88f82f53bc1b65/element/0.17728664792034232-1/text"
+[12:46:08]  DATA		{}
+[12:46:08]  RESULT		"CREATE NEW WORKFLOW"
+[12:46:08]  COMMAND	POST 	 "/wd/hub/session/7a8557915bb11fb50e88f82f53bc1b65/element"
+[12:46:08]  DATA		{"using":"css selector","value":"[href=\"/create\"]"}
+[12:46:08]  RESULT		{"ELEMENT":"0.17728664792034232-1"}
+[12:46:08]  COMMAND	POST 	 "/wd/hub/session/7a8557915bb11fb50e88f82f53bc1b65/element/0.17728664792034232-1/click"
+[12:46:08]  DATA		{}
+[12:46:09]  COMMAND	POST 	 "/wd/hub/session/7a8557915bb11fb50e88f82f53bc1b65/element"
+[12:46:09]  DATA		{"using":"css selector","value":"input[name=\"name\"]"}
+[12:46:09]  RESULT		{"ELEMENT":"0.17728664792034232-2"}
+[12:46:09]  COMMAND	POST 	 "/wd/hub/session/7a8557915bb11fb50e88f82f53bc1b65/element/0.17728664792034232-2/clear"
+[12:46:09]  DATA		{}
+[12:46:09]  COMMAND	POST 	 "/wd/hub/session/7a8557915bb11fb50e88f82f53bc1b65/element/0.17728664792034232-2/value"
+[12:46:09]  DATA		{"value":["h","e","l","l","o"],"text":"hello"}
+[12:46:09]  COMMAND	POST 	 "/wd/hub/session/7a8557915bb11fb50e88f82f53bc1b65/element"
+[12:46:09]  DATA		{"using":"css selector","value":"[title=\"Create\"]"}
+[12:46:09]  RESULT		{"ELEMENT":"0.17728664792034232-3"}
+[12:46:09]  COMMAND	POST 	 "/wd/hub/session/7a8557915bb11fb50e88f82f53bc1b65/element/0.17728664792034232-3/click"
+[12:46:09]  DATA		{}
+[12:46:19]  COMMAND	POST 	 "/wd/hub/session/7a8557915bb11fb50e88f82f53bc1b65/element"
+[12:46:19]  DATA		{"using":"css selector","value":".Connectors-grid-element___207RbN"}
+[12:46:19]  COMMAND	GET 	 "/wd/hub/session/7a8557915bb11fb50e88f82f53bc1b65/screenshot"
+[12:46:19]  DATA		{}
+[12:46:19]  RESULT		"iVBORw0KGgoAAAANSUhEUgAABLAAAAKfCAYAAAB+CzEWAAAgAElEQVR4nOzd13JbWZrm/f/aFh6gFY28lEbpqrqro3sOZu6qb6CvoK/pm6OJ7qqOiZ6q9KqUoffw2P472CBI0EgERSUh6flFZIQIbCwsAItg4sG73m3+9d/+PUNERERERERERGRKWbc9ARERERERERE ... (95002 more bytes)
+[12:46:19]  	Saved screenshot: ERROR_chrome.any_2018-10-19T11-46-19.391Z.png
+[12:46:19]  COMMAND	POST 	 "/wd/hub/session/7a8557915bb11fb50e88f82f53bc1b65/execute"
+[12:46:19]  DATA		{"script":"return (function () {\n            localStorage.clear();\n            sessionStorage.clear();\n        }).apply(null, arguments)","args":[]}

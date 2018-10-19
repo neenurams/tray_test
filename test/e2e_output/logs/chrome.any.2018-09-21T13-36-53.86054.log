@@ -1,0 +1,36 @@
+[14:36:53]  COMMAND	GET 	 "/wd/hub/status"
+[14:36:53]  DATA		{}
+[14:36:54]  RESULT		{"build":{"version":"alpha"},"os":{"arch":"x86_64","name":"Mac OS X","version":"10.13.4"}}
+[14:36:54]  COMMAND	POST 	 "/wd/hub/session"
+[14:36:54]  DATA		{"desiredCapabilities":{"javascriptEnabled":true,"locationContextEnabled":true,"handlesAlerts":true,"rotatable":true,"chromeOptions":{"prefs":{"profile.default_content_settings.popups":0,"download.default_directory":"test/e2e_downloads"},"args":["headless","disable-gpu","window-size=1920x1080","no-sandbox"]},"isHeadless":true,"browserName":"chrome","platform":"ANY","name":"","loggingPrefs":{"browser":"ALL","driver":"ALL"},"_":"1 more keys: [\"requestOrigins\"]"}}
+[14:36:54]  INFO	SET SESSION ID 8daed739c5d89f520de75b4deee5047c
+[14:36:54]  RESULT		{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db)","userDataDir":"/var/folders/zd/m442nyf515nfj63pgsj132f00000gp/T/.org.chromium.Chromium.4WAC41"},"cssSelectorsEnabled":true,"databaseEnabled":false,"goog:chromeOptions":{"debuggerAddress":"localhost:55701"},"handlesAlerts":true,"hasTouchScreen":false,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platform":"Mac OS X","rotatable":false,"setWindowRect":true,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"69.0.3497.100","webStorageEnabled":true}
+[14:36:54]  COMMAND	POST 	 "/wd/hub/session/8daed739c5d89f520de75b4deee5047c/url"
+[14:36:54]  DATA		{"url":"https://qa.ckotech.co/v2/login"}
+[14:36:56]  COMMAND	POST 	 "/wd/hub/session/8daed739c5d89f520de75b4deee5047c/element"
+[14:36:56]  DATA		{"using":"css selector","value":"input[type=\"email\"]"}
+[14:36:56]  RESULT		{"ELEMENT":"0.41321866073407-1"}
+[14:36:56]  COMMAND	POST 	 "/wd/hub/session/8daed739c5d89f520de75b4deee5047c/element/0.41321866073407-1/clear"
+[14:36:56]  DATA		{}
+[14:36:56]  COMMAND	POST 	 "/wd/hub/session/8daed739c5d89f520de75b4deee5047c/element/0.41321866073407-1/value"
+[14:36:56]  DATA		{"value":["q","a","_","e","m","a","i","l","+","w","(17 more items)"],"text":"qa_email+write@checkout.com"}
+[14:36:56]  COMMAND	POST 	 "/wd/hub/session/8daed739c5d89f520de75b4deee5047c/element"
+[14:36:56]  DATA		{"using":"css selector","value":"input[type=\"password\"]"}
+[14:36:56]  RESULT		{"ELEMENT":"0.41321866073407-2"}
+[14:36:56]  COMMAND	POST 	 "/wd/hub/session/8daed739c5d89f520de75b4deee5047c/element/0.41321866073407-2/clear"
+[14:36:56]  DATA		{}
+[14:36:56]  COMMAND	POST 	 "/wd/hub/session/8daed739c5d89f520de75b4deee5047c/element/0.41321866073407-2/value"
+[14:36:56]  DATA		{"value":["C","h","e","c","k","o","u","t","_","1","(2 more items)"],"text":"Checkout_123"}
+[14:36:56]  COMMAND	POST 	 "/wd/hub/session/8daed739c5d89f520de75b4deee5047c/element"
+[14:36:56]  DATA		{"using":"css selector","value":"[value=\"Log in\"]"}
+[14:36:56]  RESULT		{"ELEMENT":"0.41321866073407-3"}
+[14:36:56]  COMMAND	POST 	 "/wd/hub/session/8daed739c5d89f520de75b4deee5047c/element/0.41321866073407-3/click"
+[14:36:56]  DATA		{}
+[14:36:56]  COMMAND	POST 	 "/wd/hub/session/8daed739c5d89f520de75b4deee5047c/element"
+[14:36:56]  DATA		{"using":"css selector","value":"[class=\"main-title\"]"}
+[14:36:56]  COMMAND	GET 	 "/wd/hub/session/8daed739c5d89f520de75b4deee5047c/screenshot"
+[14:36:56]  DATA		{}
+[14:36:57]  RESULT		"iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4CAYAAADo08FDAAAgAElEQVR4nOzdPYhsaV7H8f85p16679yXgWUYEV2YcZJ1ZRWXxUFQXEEQNFpQFFEMDI3EyNzIyGRxA9HQYLONF3QDFUVEUEx2Ex0MHJjZ2Z1+qarzYlDV1X3v7ZfbPaO9/fPzie6te+qp032i4nv/z9N ... (23842 more bytes)
+[14:36:57]  	Saved screenshot: ERROR_chrome.any_2018-09-21T13-36-56.875Z.png
+[14:36:57]  COMMAND	POST 	 "/wd/hub/session/8daed739c5d89f520de75b4deee5047c/execute"
+[14:36:57]  DATA		{"script":"return (function () {\n            localStorage.clear();\n            sessionStorage.clear();\n        }).apply(null, arguments)","args":[]}

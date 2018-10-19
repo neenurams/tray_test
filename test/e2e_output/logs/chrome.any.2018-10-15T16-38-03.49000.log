@@ -1,0 +1,45 @@
+[17:38:03]  COMMAND	GET 	 "/wd/hub/status"
+[17:38:03]  DATA		{}
+[17:38:03]  RESULT		{"build":{"version":"alpha"},"os":{"arch":"x86_64","name":"Mac OS X","version":"10.13.4"}}
+[17:38:03]  COMMAND	POST 	 "/wd/hub/session"
+[17:38:03]  DATA		{"desiredCapabilities":{"javascriptEnabled":true,"locationContextEnabled":true,"handlesAlerts":true,"rotatable":true,"chromeOptions":{"prefs":{"profile.default_content_settings.popups":0,"download.default_directory":"test/e2e_downloads"},"args":["disable-gpu","window-size=1920x1080","no-sandbox"]},"isHeadless":false,"browserName":"chrome","platform":"ANY","name":"","loggingPrefs":{"browser":"ALL","driver":"ALL"},"_":"1 more keys: [\"requestOrigins\"]"}}
+[17:38:05]  INFO	SET SESSION ID c13767f2f51c5b66c32917ede0949a32
+[17:38:05]  RESULT		{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db)","userDataDir":"/var/folders/zd/m442nyf515nfj63pgsj132f00000gp/T/.org.chromium.Chromium.paD2ob"},"cssSelectorsEnabled":true,"databaseEnabled":false,"goog:chromeOptions":{"debuggerAddress":"localhost:55274"},"handlesAlerts":true,"hasTouchScreen":false,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platform":"Mac OS X","rotatable":false,"setWindowRect":true,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"69.0.3497.100","webStorageEnabled":true}
+[17:38:05]  COMMAND	POST 	 "/wd/hub/session/c13767f2f51c5b66c32917ede0949a32/url"
+[17:38:05]  DATA		{"url":"https://qa.ckotech.co/v2/login"}
+[17:38:07]  COMMAND	POST 	 "/wd/hub/session/c13767f2f51c5b66c32917ede0949a32/element"
+[17:38:07]  DATA		{"using":"css selector","value":"input[type=\"email\"]"}
+[17:38:07]  RESULT		{"ELEMENT":"0.13331081109937815-1"}
+[17:38:07]  COMMAND	POST 	 "/wd/hub/session/c13767f2f51c5b66c32917ede0949a32/element/0.13331081109937815-1/clear"
+[17:38:07]  DATA		{}
+[17:38:07]  COMMAND	POST 	 "/wd/hub/session/c13767f2f51c5b66c32917ede0949a32/element/0.13331081109937815-1/value"
+[17:38:07]  DATA		{"value":["q","a","_","e","m","a","i","l","+","c","(22 more items)"],"text":"qa_email+chimpAdmin@checkout.com"}
+[17:38:07]  COMMAND	POST 	 "/wd/hub/session/c13767f2f51c5b66c32917ede0949a32/element"
+[17:38:07]  DATA		{"using":"css selector","value":"input[type=\"password\"]"}
+[17:38:07]  RESULT		{"ELEMENT":"0.13331081109937815-2"}
+[17:38:07]  COMMAND	POST 	 "/wd/hub/session/c13767f2f51c5b66c32917ede0949a32/element/0.13331081109937815-2/clear"
+[17:38:07]  DATA		{}
+[17:38:07]  COMMAND	POST 	 "/wd/hub/session/c13767f2f51c5b66c32917ede0949a32/element/0.13331081109937815-2/value"
+[17:38:07]  DATA		{"value":["C","h","e","c","k","o","u","t","_","1","(2 more items)"],"text":"Checkout_123"}
+[17:38:08]  COMMAND	POST 	 "/wd/hub/session/c13767f2f51c5b66c32917ede0949a32/element"
+[17:38:08]  DATA		{"using":"css selector","value":"[value=\"Log in\"]"}
+[17:38:08]  RESULT		{"ELEMENT":"0.13331081109937815-3"}
+[17:38:08]  COMMAND	POST 	 "/wd/hub/session/c13767f2f51c5b66c32917ede0949a32/element/0.13331081109937815-3/click"
+[17:38:08]  DATA		{}
+[17:38:08]  COMMAND	GET 	 "/wd/hub/session/c13767f2f51c5b66c32917ede0949a32/url"
+[17:38:08]  DATA		{}
+[17:38:08]  RESULT		"https://qa.ckotech.co/v2/login"
+[17:38:08]  COMMAND	GET 	 "/wd/hub/session/c13767f2f51c5b66c32917ede0949a32/url"
+[17:38:08]  DATA		{}
+[17:38:08]  RESULT		"https://qa.ckotech.co/v2/login"
+[17:38:08]  COMMAND	GET 	 "/wd/hub/session/c13767f2f51c5b66c32917ede0949a32/url"
+[17:38:08]  DATA		{}
+[17:38:08]  RESULT		"https://qa.ckotech.co/v2/dashboard"
+[17:38:09]  COMMAND	POST 	 "/wd/hub/session/c13767f2f51c5b66c32917ede0949a32/element"
+[17:38:09]  DATA		{"using":"css selector","value":"[id = \"kpi-title\"]"}
+[17:38:09]  RESULT		{"ELEMENT":"0.13331081109937815-4"}
+[17:38:09]  COMMAND	GET 	 "/wd/hub/session/c13767f2f51c5b66c32917ede0949a32/element/0.13331081109937815-4/text"
+[17:38:09]  DATA		{}
+[17:38:09]  RESULT		"Key performance indicators"
+[17:38:09]  COMMAND	POST 	 "/wd/hub/session/c13767f2f51c5b66c32917ede0949a32/execute"
+[17:38:09]  DATA		{"script":"return (function () {\n            localStorage.clear();\n            sessionStorage.clear();\n        }).apply(null, arguments)","args":[]}

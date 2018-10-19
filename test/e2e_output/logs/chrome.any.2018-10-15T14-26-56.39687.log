@@ -1,0 +1,20 @@
+[15:26:56]  COMMAND	GET 	 "/wd/hub/status"
+[15:26:56]  DATA		{}
+[15:26:56]  RESULT		{"build":{"version":"alpha"},"os":{"arch":"x86_64","name":"Mac OS X","version":"10.13.4"}}
+[15:26:56]  COMMAND	POST 	 "/wd/hub/session"
+[15:26:56]  DATA		{"desiredCapabilities":{"javascriptEnabled":true,"locationContextEnabled":true,"handlesAlerts":true,"rotatable":true,"chromeOptions":{"prefs":{"profile.default_content_settings.popups":0,"download.default_directory":"test/e2e_downloads"},"args":["disable-gpu","window-size=1920x1080","no-sandbox"]},"isHeadless":false,"browserName":"chrome","platform":"ANY","name":"","loggingPrefs":{"browser":"ALL","driver":"ALL"},"_":"1 more keys: [\"requestOrigins\"]"}}
+[15:26:57]  INFO	SET SESSION ID 687357fbe7ef175befe0012481c08850
+[15:26:57]  RESULT		{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db)","userDataDir":"/var/folders/zd/m442nyf515nfj63pgsj132f00000gp/T/.org.chromium.Chromium.hSo3EO"},"cssSelectorsEnabled":true,"databaseEnabled":false,"goog:chromeOptions":{"debuggerAddress":"localhost:54767"},"handlesAlerts":true,"hasTouchScreen":false,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platform":"Mac OS X","rotatable":false,"setWindowRect":true,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"69.0.3497.100","webStorageEnabled":true}
+[15:26:57]  COMMAND	POST 	 "/wd/hub/session/687357fbe7ef175befe0012481c08850/url"
+[15:26:57]  DATA		{"url":"https://qa.ckotech.co/v2/login"}
+[15:27:01]  COMMAND	POST 	 "/wd/hub/session/687357fbe7ef175befe0012481c08850/elements"
+[15:27:01]  DATA		{"using":"css selector","value":"[class=css-1ia0f3j]"}
+[15:27:01]  RESULT		[{"ELEMENT":"0.2901136984856423-1"},{"ELEMENT":"0.2901136984856423-2"}]
+[15:27:01]  COMMAND	GET 	 "/wd/hub/session/687357fbe7ef175befe0012481c08850/element/0.2901136984856423-1/text"
+[15:27:01]  DATA		{}
+[15:27:01]  COMMAND	GET 	 "/wd/hub/session/687357fbe7ef175befe0012481c08850/element/0.2901136984856423-2/text"
+[15:27:01]  DATA		{}
+[15:27:01]  RESULT		"Log in to The Hub\nForgot?\nLog in"
+[15:27:01]  RESULT		"Did you know?\nYou can configure webhooks from the webhoook management section to receive notifications about events that occurs on your account"
+[15:27:01]  COMMAND	POST 	 "/wd/hub/session/687357fbe7ef175befe0012481c08850/execute"
+[15:27:01]  DATA		{"script":"return (function () {\n            localStorage.clear();\n            sessionStorage.clear();\n        }).apply(null, arguments)","args":[]}

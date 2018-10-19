@@ -1,0 +1,36 @@
+[13:51:07]  COMMAND	GET 	 "/wd/hub/status"
+[13:51:07]  DATA		{}
+[13:51:07]  RESULT		{"build":{"version":"alpha"},"os":{"arch":"x86_64","name":"Mac OS X","version":"10.13.4"}}
+[13:51:07]  COMMAND	POST 	 "/wd/hub/session"
+[13:51:07]  DATA		{"desiredCapabilities":{"javascriptEnabled":true,"locationContextEnabled":true,"handlesAlerts":true,"rotatable":true,"chromeOptions":{"prefs":{"profile.default_content_settings.popups":0,"download.default_directory":"test/e2e_downloads"},"args":["disable-gpu","window-size=1920x1080","no-sandbox"]},"isHeadless":false,"browserName":"chrome","platform":"ANY","name":"","loggingPrefs":{"browser":"ALL","driver":"ALL"},"_":"1 more keys: [\"requestOrigins\"]"}}
+[13:51:08]  INFO	SET SESSION ID 437ecaf7bac502619a4b867fc98773ee
+[13:51:08]  RESULT		{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db)","userDataDir":"/var/folders/zd/m442nyf515nfj63pgsj132f00000gp/T/.org.chromium.Chromium.3ckrQW"},"cssSelectorsEnabled":true,"databaseEnabled":false,"goog:chromeOptions":{"debuggerAddress":"localhost:63244"},"handlesAlerts":true,"hasTouchScreen":false,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platform":"Mac OS X","rotatable":false,"setWindowRect":true,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"69.0.3497.100","webStorageEnabled":true}
+[13:51:08]  COMMAND	POST 	 "/wd/hub/session/437ecaf7bac502619a4b867fc98773ee/url"
+[13:51:08]  DATA		{"url":"https://qa.ckotech.co/v2/login"}
+[13:51:09]  COMMAND	POST 	 "/wd/hub/session/437ecaf7bac502619a4b867fc98773ee/element"
+[13:51:09]  DATA		{"using":"css selector","value":"input[type=\"email\"]"}
+[13:51:09]  RESULT		{"ELEMENT":"0.11958097759528274-1"}
+[13:51:09]  COMMAND	POST 	 "/wd/hub/session/437ecaf7bac502619a4b867fc98773ee/element/0.11958097759528274-1/clear"
+[13:51:09]  DATA		{}
+[13:51:09]  COMMAND	POST 	 "/wd/hub/session/437ecaf7bac502619a4b867fc98773ee/element/0.11958097759528274-1/value"
+[13:51:09]  DATA		{"value":["q","a","_","e","m","a","i","l","+","c","(22 more items)"],"text":"qa_email+chimpblock@checkout.com"}
+[13:51:10]  COMMAND	POST 	 "/wd/hub/session/437ecaf7bac502619a4b867fc98773ee/element"
+[13:51:10]  DATA		{"using":"css selector","value":"input[type=\"password\"]"}
+[13:51:10]  RESULT		{"ELEMENT":"0.11958097759528274-2"}
+[13:51:10]  COMMAND	POST 	 "/wd/hub/session/437ecaf7bac502619a4b867fc98773ee/element/0.11958097759528274-2/clear"
+[13:51:10]  DATA		{}
+[13:51:10]  COMMAND	POST 	 "/wd/hub/session/437ecaf7bac502619a4b867fc98773ee/element/0.11958097759528274-2/value"
+[13:51:10]  DATA		{"value":["C","h","e","c","k","o","u","t","_","1","(2 more items)"],"text":"Checkout_123"}
+[13:51:10]  COMMAND	POST 	 "/wd/hub/session/437ecaf7bac502619a4b867fc98773ee/element"
+[13:51:10]  DATA		{"using":"css selector","value":"[value=\"Log in\"]"}
+[13:51:10]  RESULT		{"ELEMENT":"0.11958097759528274-3"}
+[13:51:10]  COMMAND	POST 	 "/wd/hub/session/437ecaf7bac502619a4b867fc98773ee/element/0.11958097759528274-3/click"
+[13:51:10]  DATA		{}
+[13:51:12]  COMMAND	POST 	 "/wd/hub/session/437ecaf7bac502619a4b867fc98773ee/element"
+[13:51:12]  DATA		{"using":"css selector","value":".ant-alert-description"}
+[13:51:12]  RESULT		{"ELEMENT":"0.11958097759528274-4"}
+[13:51:12]  COMMAND	GET 	 "/wd/hub/session/437ecaf7bac502619a4b867fc98773ee/element/0.11958097759528274-4/text"
+[13:51:12]  DATA		{}
+[13:51:12]  RESULT		"Your account has been blocked due to too many invalid login attempts\nLast successful login: 15/10/2018 12:10:03"
+[13:51:12]  COMMAND	POST 	 "/wd/hub/session/437ecaf7bac502619a4b867fc98773ee/execute"
+[13:51:12]  DATA		{"script":"return (function () {\n            localStorage.clear();\n            sessionStorage.clear();\n        }).apply(null, arguments)","args":[]}

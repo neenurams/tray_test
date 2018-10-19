@@ -1,0 +1,105 @@
+[10:40:27]  COMMAND	GET 	 "/wd/hub/status"
+[10:40:27]  DATA		{}
+[10:40:27]  RESULT		{"build":{"version":"alpha"},"os":{"arch":"x86_64","name":"Mac OS X","version":"10.13.4"}}
+[10:40:27]  COMMAND	POST 	 "/wd/hub/session"
+[10:40:27]  DATA		{"desiredCapabilities":{"javascriptEnabled":true,"locationContextEnabled":true,"handlesAlerts":true,"rotatable":true,"chromeOptions":{"prefs":{"profile.default_content_settings.popups":0,"download.default_directory":"test/e2e_downloads"},"args":["disable-gpu","window-size=1920x1080","no-sandbox"]},"isHeadless":false,"browserName":"chrome","platform":"ANY","name":"","loggingPrefs":{"browser":"ALL","driver":"ALL"},"_":"1 more keys: [\"requestOrigins\"]"}}
+[10:40:28]  INFO	SET SESSION ID 34824135def42d27dde27cd79b9b3195
+[10:40:28]  RESULT		{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db)","userDataDir":"/var/folders/zd/m442nyf515nfj63pgsj132f00000gp/T/.org.chromium.Chromium.GFoYpX"},"cssSelectorsEnabled":true,"databaseEnabled":false,"goog:chromeOptions":{"debuggerAddress":"localhost:51056"},"handlesAlerts":true,"hasTouchScreen":false,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platform":"Mac OS X","rotatable":false,"setWindowRect":true,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"69.0.3497.100","webStorageEnabled":true}
+[10:40:28]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/url"
+[10:40:28]  DATA		{"url":"https://qa.ckotech.co/v2/login"}
+[10:40:29]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/element"
+[10:40:29]  DATA		{"using":"css selector","value":"input[type=\"email\"]"}
+[10:40:29]  RESULT		{"ELEMENT":"0.5626278089815342-1"}
+[10:40:29]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/element/0.5626278089815342-1/clear"
+[10:40:29]  DATA		{}
+[10:40:29]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/element/0.5626278089815342-1/value"
+[10:40:29]  DATA		{"value":["q","a","_","e","m","a","i","l","+","c","(22 more items)"],"text":"qa_email+chimpAdmin@checkout.com"}
+[10:40:30]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/element"
+[10:40:30]  DATA		{"using":"css selector","value":"input[type=\"password\"]"}
+[10:40:30]  RESULT		{"ELEMENT":"0.5626278089815342-2"}
+[10:40:30]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/element/0.5626278089815342-2/clear"
+[10:40:30]  DATA		{}
+[10:40:30]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/element/0.5626278089815342-2/value"
+[10:40:30]  DATA		{"value":["C","h","e","c","k","o","u","t","_","1","(2 more items)"],"text":"Checkout_123"}
+[10:40:30]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/element"
+[10:40:30]  DATA		{"using":"css selector","value":"[value=\"Log in\"]"}
+[10:40:30]  RESULT		{"ELEMENT":"0.5626278089815342-3"}
+[10:40:30]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/element/0.5626278089815342-3/click"
+[10:40:30]  DATA		{}
+[10:40:30]  COMMAND	GET 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/url"
+[10:40:30]  DATA		{}
+[10:40:30]  RESULT		"https://qa.ckotech.co/v2/login"
+[10:40:30]  COMMAND	GET 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/url"
+[10:40:30]  DATA		{}
+[10:40:30]  RESULT		"https://qa.ckotech.co/v2/login"
+[10:40:30]  COMMAND	GET 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/url"
+[10:40:30]  DATA		{}
+[10:40:30]  RESULT		"https://qa.ckotech.co/v2/dashboard"
+[10:40:32]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/element"
+[10:40:32]  DATA		{"using":"css selector","value":"[id = \"kpi-title\"]"}
+[10:40:32]  RESULT		{"ELEMENT":"0.5626278089815342-4"}
+[10:40:32]  COMMAND	GET 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/element/0.5626278089815342-4/text"
+[10:40:32]  DATA		{}
+[10:40:32]  RESULT		"Key performance indicators"
+[10:40:32]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/url"
+[10:40:32]  DATA		{"url":"https://qa.ckotech.co/v2/payments"}
+[10:40:34]  COMMAND	GET 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/url"
+[10:40:34]  DATA		{}
+[10:40:34]  RESULT		"https://qa.ckotech.co/v2/payments"
+[10:40:36]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/element"
+[10:40:36]  DATA		{"using":"css selector","value":"[class=css-44nnhf]"}
+[10:40:36]  RESULT		{"ELEMENT":"0.33503145783866617-1"}
+[10:40:36]  COMMAND	GET 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/element/0.33503145783866617-1/text"
+[10:40:36]  DATA		{}
+[10:40:36]  RESULT		"No payments today yet!\nWe couldn’t find any records of payments or actions for the current day.\nClick below to create a new payment.\nCreate payment"
+[10:40:36]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/execute"
+[10:40:36]  DATA		{"script":"return (function () {\n            localStorage.clear();\n            sessionStorage.clear();\n        }).apply(null, arguments)","args":[]}
+[10:40:36]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/url"
+[10:40:36]  DATA		{"url":"https://qa.ckotech.co/v2/login"}
+[10:40:36]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/element"
+[10:40:36]  DATA		{"using":"css selector","value":"input[type=\"email\"]"}
+[10:40:36]  RESULT		{"ELEMENT":"0.9590859473213922-1"}
+[10:40:36]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/element/0.9590859473213922-1/clear"
+[10:40:36]  DATA		{}
+[10:40:36]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/element/0.9590859473213922-1/value"
+[10:40:36]  DATA		{"value":["q","a","_","e","m","a","i","l","+","c","(21 more items)"],"text":"qa_email+chimpread@checkout.com"}
+[10:40:37]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/element"
+[10:40:37]  DATA		{"using":"css selector","value":"input[type=\"password\"]"}
+[10:40:37]  RESULT		{"ELEMENT":"0.9590859473213922-2"}
+[10:40:37]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/element/0.9590859473213922-2/clear"
+[10:40:37]  DATA		{}
+[10:40:37]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/element/0.9590859473213922-2/value"
+[10:40:37]  DATA		{"value":["C","h","e","c","k","o","u","t","_","1","(2 more items)"],"text":"Checkout_123"}
+[10:40:37]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/element"
+[10:40:37]  DATA		{"using":"css selector","value":"[value=\"Log in\"]"}
+[10:40:37]  RESULT		{"ELEMENT":"0.9590859473213922-3"}
+[10:40:37]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/element/0.9590859473213922-3/click"
+[10:40:37]  DATA		{}
+[10:40:37]  COMMAND	GET 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/url"
+[10:40:37]  DATA		{}
+[10:40:37]  RESULT		"https://qa.ckotech.co/v2/login"
+[10:40:37]  COMMAND	GET 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/url"
+[10:40:37]  DATA		{}
+[10:40:37]  RESULT		"https://qa.ckotech.co/v2/login"
+[10:40:38]  COMMAND	GET 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/url"
+[10:40:38]  DATA		{}
+[10:40:38]  RESULT		"https://qa.ckotech.co/v2/dashboard"
+[10:40:39]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/element"
+[10:40:39]  DATA		{"using":"css selector","value":"[id = \"kpi-title\"]"}
+[10:40:39]  RESULT		{"ELEMENT":"0.9590859473213922-4"}
+[10:40:39]  COMMAND	GET 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/element/0.9590859473213922-4/text"
+[10:40:39]  DATA		{}
+[10:40:39]  RESULT		"Key performance indicators"
+[10:40:39]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/url"
+[10:40:39]  DATA		{"url":"https://qa.ckotech.co/v2/payments"}
+[10:40:41]  COMMAND	GET 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/url"
+[10:40:41]  DATA		{}
+[10:40:41]  RESULT		"https://qa.ckotech.co/v2/payments"
+[10:40:43]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/element"
+[10:40:43]  DATA		{"using":"css selector","value":"[class=css-44nnhf]"}
+[10:40:43]  RESULT		{"ELEMENT":"0.6827107698384638-1"}
+[10:40:43]  COMMAND	GET 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/element/0.6827107698384638-1/text"
+[10:40:43]  DATA		{}
+[10:40:43]  RESULT		"No payments today yet!\nWe couldn’t find any records of payments or actions for the current day.\nYou currently don’t have access to manually create payments.\nPlease contact your account administrator."
+[10:40:43]  COMMAND	POST 	 "/wd/hub/session/34824135def42d27dde27cd79b9b3195/execute"
+[10:40:43]  DATA		{"script":"return (function () {\n            localStorage.clear();\n            sessionStorage.clear();\n        }).apply(null, arguments)","args":[]}

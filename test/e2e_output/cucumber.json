@@ -1,0 +1,111 @@
+[
+  {
+    "elements": [
+      {
+        "id": "create-and-delete-workflow;as-a-user,-i-should-be-able-to-create-and-delete-workflow",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "As a user, I should be able to create and delete workflow",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I successfully logged in to tray.io",
+            "result": {
+              "status": "passed",
+              "duration": 7641284500
+            },
+            "line": 4,
+            "match": {
+              "location": "/Users/neenu.ramakrishnan/Documents/GitHub/tray_test/test/e2e/specs/login-spec.js:5"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I create a new workflow",
+            "result": {
+              "status": "passed",
+              "duration": 20802430259
+            },
+            "line": 5,
+            "match": {
+              "location": "/Users/neenu.ramakrishnan/Documents/GitHub/tray_test/test/e2e/specs/dashboard-spec.js:5"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I go back to dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 20349076800
+            },
+            "line": 6,
+            "match": {
+              "location": "/Users/neenu.ramakrishnan/Documents/GitHub/tray_test/test/e2e/specs/dashboard-spec.js:14"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I delete the previously created Workflow",
+            "result": {
+              "status": "passed",
+              "duration": 10338117424
+            },
+            "line": 7,
+            "match": {
+              "location": "/Users/neenu.ramakrishnan/Documents/GitHub/tray_test/test/e2e/specs/dashboard-spec.js:20"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I log out of tray.io",
+            "result": {
+              "status": "passed",
+              "duration": 10238414939
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/neenu.ramakrishnan/Documents/GitHub/tray_test/test/e2e/specs/dashboard-spec.js:27"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 9943971
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/neenu.ramakrishnan/Documents/GitHub/tray_test/test/e2e/specs/hooks.js:3"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 277439
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/neenu.ramakrishnan/Documents/GitHub/tray_test/node_modules/chimp/dist/lib/cucumberjs/hooks.js:68"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "create-and-delete-workflow",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Create and Delete Workflow",
+    "tags": [],
+    "uri": "/Users/neenu.ramakrishnan/Documents/GitHub/tray_test/test/e2e/features/workflow.feature"
+  }
+]

@@ -1,0 +1,42 @@
+[12:42:25]  COMMAND	GET 	 "/wd/hub/status"
+[12:42:25]  DATA		{}
+[12:42:25]  RESULT		{"build":{"version":"alpha"},"os":{"arch":"x86_64","name":"Mac OS X","version":"10.13.4"}}
+[12:42:25]  COMMAND	POST 	 "/wd/hub/session"
+[12:42:25]  DATA		{"desiredCapabilities":{"javascriptEnabled":true,"locationContextEnabled":true,"handlesAlerts":true,"rotatable":true,"chromeOptions":{"prefs":{"profile.default_content_settings.popups":0,"download.default_directory":"test/e2e_downloads"},"args":["headless","disable-gpu","window-size=1920x1080","no-sandbox"]},"isHeadless":true,"browserName":"chrome","platform":"ANY","name":"","loggingPrefs":{"browser":"ALL","driver":"ALL"},"_":"1 more keys: [\"requestOrigins\"]"}}
+[12:42:26]  INFO	SET SESSION ID e5c9194dfb56d46a3219d7a88e545ae3
+[12:42:26]  RESULT		{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db)","userDataDir":"/var/folders/zd/m442nyf515nfj63pgsj132f00000gp/T/.org.chromium.Chromium.nrz0jG"},"cssSelectorsEnabled":true,"databaseEnabled":false,"goog:chromeOptions":{"debuggerAddress":"localhost:65060"},"handlesAlerts":true,"hasTouchScreen":false,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platform":"Mac OS X","rotatable":false,"setWindowRect":true,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"69.0.3497.100","webStorageEnabled":true}
+[12:42:26]  COMMAND	POST 	 "/wd/hub/session/e5c9194dfb56d46a3219d7a88e545ae3/url"
+[12:42:26]  DATA		{"url":"https://qa.ckotech.co/v2/login"}
+[12:42:27]  COMMAND	POST 	 "/wd/hub/session/e5c9194dfb56d46a3219d7a88e545ae3/element"
+[12:42:27]  DATA		{"using":"css selector","value":"input[type=\"email\"]"}
+[12:42:27]  RESULT		{"ELEMENT":"0.051190956937692045-1"}
+[12:42:27]  COMMAND	POST 	 "/wd/hub/session/e5c9194dfb56d46a3219d7a88e545ae3/element/0.051190956937692045-1/clear"
+[12:42:27]  DATA		{}
+[12:42:27]  COMMAND	POST 	 "/wd/hub/session/e5c9194dfb56d46a3219d7a88e545ae3/element/0.051190956937692045-1/value"
+[12:42:27]  DATA		{"value":["q","a","_","e","m","a","i","l","+","w","(17 more items)"],"text":"qa_email+write@checkout.com"}
+[12:42:28]  COMMAND	POST 	 "/wd/hub/session/e5c9194dfb56d46a3219d7a88e545ae3/element"
+[12:42:28]  DATA		{"using":"css selector","value":"input[type=\"password\"]"}
+[12:42:28]  RESULT		{"ELEMENT":"0.051190956937692045-2"}
+[12:42:28]  COMMAND	POST 	 "/wd/hub/session/e5c9194dfb56d46a3219d7a88e545ae3/element/0.051190956937692045-2/clear"
+[12:42:28]  DATA		{}
+[12:42:28]  COMMAND	POST 	 "/wd/hub/session/e5c9194dfb56d46a3219d7a88e545ae3/element/0.051190956937692045-2/value"
+[12:42:28]  DATA		{"value":["w","r","o","n","g","p","a","s","s","w","(3 more items)"],"text":"wrongpassword"}
+[12:42:28]  COMMAND	POST 	 "/wd/hub/session/e5c9194dfb56d46a3219d7a88e545ae3/element"
+[12:42:28]  DATA		{"using":"css selector","value":"button[id=\"login-btn\"]"}
+[12:42:28]  RESULT		{"ELEMENT":"0.051190956937692045-3"}
+[12:42:28]  COMMAND	POST 	 "/wd/hub/session/e5c9194dfb56d46a3219d7a88e545ae3/element/0.051190956937692045-3/click"
+[12:42:28]  DATA		{}
+[12:42:30]  COMMAND	POST 	 "/wd/hub/session/e5c9194dfb56d46a3219d7a88e545ae3/element"
+[12:42:30]  DATA		{"using":"css selector","value":".ant-alert-description"}
+[12:42:30]  RESULT		{"ELEMENT":"0.051190956937692045-4"}
+[12:42:30]  COMMAND	GET 	 "/wd/hub/session/e5c9194dfb56d46a3219d7a88e545ae3/element/0.051190956937692045-4/text"
+[12:42:30]  DATA		{}
+[12:42:30]  RESULT		"2 more attempts remaining\nLast successful login: 21/09/2018 12:09:34"
+[12:42:32]  COMMAND	POST 	 "/wd/hub/session/e5c9194dfb56d46a3219d7a88e545ae3/element"
+[12:42:32]  DATA		{"using":"css selector","value":".ant-alert-description"}
+[12:42:32]  RESULT		{"ELEMENT":"0.051190956937692045-4"}
+[12:42:32]  COMMAND	GET 	 "/wd/hub/session/e5c9194dfb56d46a3219d7a88e545ae3/element/0.051190956937692045-4/text"
+[12:42:32]  DATA		{}
+[12:42:32]  RESULT		"2 more attempts remaining\nLast successful login: 21/09/2018 12:09:34"
+[12:42:32]  COMMAND	POST 	 "/wd/hub/session/e5c9194dfb56d46a3219d7a88e545ae3/execute"
+[12:42:32]  DATA		{"script":"return (function () {\n            localStorage.clear();\n            sessionStorage.clear();\n        }).apply(null, arguments)","args":[]}

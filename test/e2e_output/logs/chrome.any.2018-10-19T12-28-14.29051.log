@@ -1,0 +1,36 @@
+[13:28:14]  COMMAND	GET 	 "/wd/hub/status"
+[13:28:14]  DATA		{}
+[13:28:14]  RESULT		{"build":{"version":"alpha"},"os":{"arch":"x86_64","name":"Mac OS X","version":"10.13.4"}}
+[13:28:14]  COMMAND	POST 	 "/wd/hub/session"
+[13:28:14]  DATA		{"desiredCapabilities":{"javascriptEnabled":true,"locationContextEnabled":true,"handlesAlerts":true,"rotatable":true,"chromeOptions":{"prefs":{"profile.default_content_settings.popups":0,"download.default_directory":"test/e2e_downloads"},"args":["disable-gpu","window-size=1920x1080","no-sandbox"]},"isHeadless":false,"browserName":"chrome","platform":"ANY","name":"","loggingPrefs":{"browser":"ALL","driver":"ALL"},"_":"1 more keys: [\"requestOrigins\"]"}}
+[13:28:16]  INFO	SET SESSION ID 7efcbba19a97049332c505c1778daafe
+[13:28:16]  RESULT		{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052)","userDataDir":"/var/folders/zd/m442nyf515nfj63pgsj132f00000gp/T/.org.chromium.Chromium.Gfaoyz"},"cssSelectorsEnabled":true,"databaseEnabled":false,"goog:chromeOptions":{"debuggerAddress":"localhost:51974"},"handlesAlerts":true,"hasTouchScreen":false,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platform":"Mac OS X","rotatable":false,"setWindowRect":true,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"69.0.3497.100","webStorageEnabled":true}
+[13:28:16]  COMMAND	POST 	 "/wd/hub/session/7efcbba19a97049332c505c1778daafe/url"
+[13:28:16]  DATA		{"url":"https://app.tray.io/login"}
+[13:28:39]  COMMAND	POST 	 "/wd/hub/session/7efcbba19a97049332c505c1778daafe/element"
+[13:28:39]  DATA		{"using":"css selector","value":"input[name=\"username\"]"}
+[13:28:39]  RESULT		{"ELEMENT":"0.3743246264447133-1"}
+[13:28:39]  COMMAND	POST 	 "/wd/hub/session/7efcbba19a97049332c505c1778daafe/element/0.3743246264447133-1/clear"
+[13:28:39]  DATA		{}
+[13:28:39]  COMMAND	POST 	 "/wd/hub/session/7efcbba19a97049332c505c1778daafe/element/0.3743246264447133-1/value"
+[13:28:39]  DATA		{"value":["n","e","e","n","u",".","r","5","6","7","(10 more items)"],"text":"neenu.r567@gmail.com"}
+[13:28:39]  COMMAND	POST 	 "/wd/hub/session/7efcbba19a97049332c505c1778daafe/element"
+[13:28:39]  DATA		{"using":"css selector","value":"input[type=\"password\"]"}
+[13:28:40]  RESULT		{"ELEMENT":"0.3743246264447133-2"}
+[13:28:40]  COMMAND	POST 	 "/wd/hub/session/7efcbba19a97049332c505c1778daafe/element/0.3743246264447133-2/clear"
+[13:28:40]  DATA		{}
+[13:28:40]  COMMAND	POST 	 "/wd/hub/session/7efcbba19a97049332c505c1778daafe/element/0.3743246264447133-2/value"
+[13:28:40]  DATA		{"value":["t","e","s","t","_","t","r","a","y"],"text":"test_tray"}
+[13:28:40]  COMMAND	POST 	 "/wd/hub/session/7efcbba19a97049332c505c1778daafe/element"
+[13:28:40]  DATA		{"using":"css selector","value":"[type=\"submit\"]"}
+[13:28:40]  RESULT		{"ELEMENT":"0.3743246264447133-3"}
+[13:28:40]  COMMAND	POST 	 "/wd/hub/session/7efcbba19a97049332c505c1778daafe/element/0.3743246264447133-3/click"
+[13:28:40]  DATA		{}
+[13:28:45]  COMMAND	POST 	 "/wd/hub/session/7efcbba19a97049332c505c1778daafe/element"
+[13:28:45]  DATA		{"using":"css selector","value":"[href=\"/create\"]"}
+[13:28:47]  COMMAND	GET 	 "/wd/hub/session/7efcbba19a97049332c505c1778daafe/screenshot"
+[13:28:47]  DATA		{}
+[13:28:47]  RESULT		"iVBORw0KGgoAAAANSUhEUgAABLAAAAKgCAYAAACLJ4RuAAAUkklEQVR4nO3cvY/mZRmG4fudmWX2e7K4mwUBVxQUG2PhR6EmxsqKzsR/z8rKXhIrC0NIaBRCkAga1yiwuF/s7szuvPOzs2OzRMN7OnMc3dNd5Z2zeFbLsiwDAAAAAFFbmx4AAAAAAI8jYAEAAACQJmA ... (6902 more bytes)
+[13:28:47]  	Saved screenshot: ERROR_chrome.any_2018-10-19T12-28-47.105Z.png
+[13:28:47]  COMMAND	POST 	 "/wd/hub/session/7efcbba19a97049332c505c1778daafe/execute"
+[13:28:47]  DATA		{"script":"return (function () {\n            localStorage.clear();\n            sessionStorage.clear();\n        }).apply(null, arguments)","args":[]}

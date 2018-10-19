@@ -1,0 +1,20 @@
+[15:15:26]  COMMAND	GET 	 "/wd/hub/status"
+[15:15:26]  DATA		{}
+[15:15:26]  RESULT		{"build":{"version":"alpha"},"os":{"arch":"x86_64","name":"Mac OS X","version":"10.13.4"}}
+[15:15:26]  COMMAND	POST 	 "/wd/hub/session"
+[15:15:26]  DATA		{"desiredCapabilities":{"javascriptEnabled":true,"locationContextEnabled":true,"handlesAlerts":true,"rotatable":true,"chromeOptions":{"prefs":{"profile.default_content_settings.popups":0,"download.default_directory":"test/e2e_downloads"},"args":["disable-gpu","window-size=1920x1080","no-sandbox"]},"isHeadless":false,"browserName":"chrome","platform":"ANY","name":"","loggingPrefs":{"browser":"ALL","driver":"ALL"},"_":"1 more keys: [\"requestOrigins\"]"}}
+[15:15:27]  INFO	SET SESSION ID a031d451370221eadf199c4578d8b641
+[15:15:27]  RESULT		{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db)","userDataDir":"/var/folders/zd/m442nyf515nfj63pgsj132f00000gp/T/.org.chromium.Chromium.nIwkFd"},"cssSelectorsEnabled":true,"databaseEnabled":false,"goog:chromeOptions":{"debuggerAddress":"localhost:51759"},"handlesAlerts":true,"hasTouchScreen":false,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platform":"Mac OS X","rotatable":false,"setWindowRect":true,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"69.0.3497.100","webStorageEnabled":true}
+[15:15:27]  COMMAND	POST 	 "/wd/hub/session/a031d451370221eadf199c4578d8b641/url"
+[15:15:27]  DATA		{"url":"https://qa.ckotech.co/v2/login"}
+[15:15:38]  COMMAND	POST 	 "/wd/hub/session/a031d451370221eadf199c4578d8b641/element"
+[15:15:38]  DATA		{"using":"css selector","value":"[class=css-1kl0c2d]"}
+[15:15:38]  RESULT		{"ELEMENT":"0.2921108476853378-1"}
+[15:15:38]  COMMAND	POST 	 "/wd/hub/session/a031d451370221eadf199c4578d8b641/element"
+[15:15:38]  DATA		{"using":"css selector","value":"[class=css-1kl0c2d]"}
+[15:15:38]  RESULT		{"ELEMENT":"0.2921108476853378-1"}
+[15:15:38]  COMMAND	GET 	 "/wd/hub/session/a031d451370221eadf199c4578d8b641/element/0.2921108476853378-1/text"
+[15:15:38]  DATA		{}
+[15:15:38]  RESULT		"Did you know?"
+[15:15:38]  COMMAND	POST 	 "/wd/hub/session/a031d451370221eadf199c4578d8b641/execute"
+[15:15:38]  DATA		{"script":"return (function () {\n            localStorage.clear();\n            sessionStorage.clear();\n        }).apply(null, arguments)","args":[]}

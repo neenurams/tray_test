@@ -1,0 +1,20 @@
+[15:17:59]  COMMAND	GET 	 "/wd/hub/status"
+[15:17:59]  DATA		{}
+[15:17:59]  RESULT		{"build":{"version":"alpha"},"os":{"arch":"x86_64","name":"Mac OS X","version":"10.13.4"}}
+[15:17:59]  COMMAND	POST 	 "/wd/hub/session"
+[15:17:59]  DATA		{"desiredCapabilities":{"javascriptEnabled":true,"locationContextEnabled":true,"handlesAlerts":true,"rotatable":true,"chromeOptions":{"prefs":{"profile.default_content_settings.popups":0,"download.default_directory":"test/e2e_downloads"},"args":["disable-gpu","window-size=1920x1080","no-sandbox"]},"isHeadless":false,"browserName":"chrome","platform":"ANY","name":"","loggingPrefs":{"browser":"ALL","driver":"ALL"},"_":"1 more keys: [\"requestOrigins\"]"}}
+[15:18:00]  INFO	SET SESSION ID d5d7c2c959aad1cc0bb787b97fd1928a
+[15:18:00]  RESULT		{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db)","userDataDir":"/var/folders/zd/m442nyf515nfj63pgsj132f00000gp/T/.org.chromium.Chromium.axuVrw"},"cssSelectorsEnabled":true,"databaseEnabled":false,"goog:chromeOptions":{"debuggerAddress":"localhost:52427"},"handlesAlerts":true,"hasTouchScreen":false,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platform":"Mac OS X","rotatable":false,"setWindowRect":true,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"69.0.3497.100","webStorageEnabled":true}
+[15:18:00]  COMMAND	POST 	 "/wd/hub/session/d5d7c2c959aad1cc0bb787b97fd1928a/url"
+[15:18:00]  DATA		{"url":"https://qa.ckotech.co/v2/login"}
+[15:18:04]  COMMAND	POST 	 "/wd/hub/session/d5d7c2c959aad1cc0bb787b97fd1928a/element"
+[15:18:04]  DATA		{"using":"css selector","value":"[class=css-knht1c]"}
+[15:18:04]  RESULT		{"ELEMENT":"0.870980182033751-1"}
+[15:18:04]  COMMAND	POST 	 "/wd/hub/session/d5d7c2c959aad1cc0bb787b97fd1928a/element"
+[15:18:04]  DATA		{"using":"css selector","value":"[class=css-knht1c]"}
+[15:18:04]  RESULT		{"ELEMENT":"0.870980182033751-1"}
+[15:18:04]  COMMAND	GET 	 "/wd/hub/session/d5d7c2c959aad1cc0bb787b97fd1928a/element/0.870980182033751-1/text"
+[15:18:04]  DATA		{}
+[15:18:04]  RESULT		"Did you know?\nYou can configure webhooks from the webhoook management section to receive notifications about events that occurs on your account"
+[15:18:04]  COMMAND	POST 	 "/wd/hub/session/d5d7c2c959aad1cc0bb787b97fd1928a/execute"
+[15:18:04]  DATA		{"script":"return (function () {\n            localStorage.clear();\n            sessionStorage.clear();\n        }).apply(null, arguments)","args":[]}

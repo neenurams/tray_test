@@ -1,0 +1,69 @@
+[17:43:31]  COMMAND	GET 	 "/wd/hub/status"
+[17:43:31]  DATA		{}
+[17:43:31]  RESULT		{"build":{"version":"alpha"},"os":{"arch":"x86_64","name":"Mac OS X","version":"10.13.4"}}
+[17:43:31]  COMMAND	POST 	 "/wd/hub/session"
+[17:43:31]  DATA		{"desiredCapabilities":{"javascriptEnabled":true,"locationContextEnabled":true,"handlesAlerts":true,"rotatable":true,"chromeOptions":{"prefs":{"profile.default_content_settings.popups":0,"download.default_directory":"test/e2e_downloads"},"args":["disable-gpu","window-size=1920x1080","no-sandbox"]},"isHeadless":false,"browserName":"chrome","platform":"ANY","name":"","loggingPrefs":{"browser":"ALL","driver":"ALL"},"_":"1 more keys: [\"requestOrigins\"]"}}
+[17:43:32]  INFO	SET SESSION ID b537155bafe23671158d49ebce015d91
+[17:43:32]  RESULT		{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db)","userDataDir":"/var/folders/zd/m442nyf515nfj63pgsj132f00000gp/T/.org.chromium.Chromium.aNx4Ca"},"cssSelectorsEnabled":true,"databaseEnabled":false,"goog:chromeOptions":{"debuggerAddress":"localhost:60863"},"handlesAlerts":true,"hasTouchScreen":false,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platform":"Mac OS X","rotatable":false,"setWindowRect":true,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"69.0.3497.100","webStorageEnabled":true}
+[17:43:32]  COMMAND	POST 	 "/wd/hub/session/b537155bafe23671158d49ebce015d91/url"
+[17:43:32]  DATA		{"url":"https://qa.ckotech.co/v2/login"}
+[17:43:34]  COMMAND	POST 	 "/wd/hub/session/b537155bafe23671158d49ebce015d91/element"
+[17:43:34]  DATA		{"using":"css selector","value":"input[type=\"email\"]"}
+[17:43:34]  RESULT		{"ELEMENT":"0.4189528564635183-1"}
+[17:43:34]  COMMAND	POST 	 "/wd/hub/session/b537155bafe23671158d49ebce015d91/element/0.4189528564635183-1/clear"
+[17:43:34]  DATA		{}
+[17:43:34]  COMMAND	POST 	 "/wd/hub/session/b537155bafe23671158d49ebce015d91/element/0.4189528564635183-1/value"
+[17:43:34]  DATA		{"value":["q","a","_","e","m","a","i","l","+","c","(22 more items)"],"text":"qa_email+chimpAdmin@checkout.com"}
+[17:43:34]  COMMAND	POST 	 "/wd/hub/session/b537155bafe23671158d49ebce015d91/element"
+[17:43:34]  DATA		{"using":"css selector","value":"input[type=\"password\"]"}
+[17:43:34]  RESULT		{"ELEMENT":"0.4189528564635183-2"}
+[17:43:34]  COMMAND	POST 	 "/wd/hub/session/b537155bafe23671158d49ebce015d91/element/0.4189528564635183-2/clear"
+[17:43:34]  DATA		{}
+[17:43:34]  COMMAND	POST 	 "/wd/hub/session/b537155bafe23671158d49ebce015d91/element/0.4189528564635183-2/value"
+[17:43:34]  DATA		{"value":["C","h","e","c","k","o","u","t","_","1","(2 more items)"],"text":"Checkout_123"}
+[17:43:34]  COMMAND	POST 	 "/wd/hub/session/b537155bafe23671158d49ebce015d91/element"
+[17:43:34]  DATA		{"using":"css selector","value":"[value=\"Log in\"]"}
+[17:43:34]  RESULT		{"ELEMENT":"0.4189528564635183-3"}
+[17:43:34]  COMMAND	POST 	 "/wd/hub/session/b537155bafe23671158d49ebce015d91/element/0.4189528564635183-3/click"
+[17:43:34]  DATA		{}
+[17:43:35]  COMMAND	GET 	 "/wd/hub/session/b537155bafe23671158d49ebce015d91/url"
+[17:43:35]  DATA		{}
+[17:43:35]  RESULT		"https://qa.ckotech.co/v2/login"
+[17:43:35]  COMMAND	GET 	 "/wd/hub/session/b537155bafe23671158d49ebce015d91/url"
+[17:43:35]  DATA		{}
+[17:43:35]  RESULT		"https://qa.ckotech.co/v2/login"
+[17:43:35]  COMMAND	GET 	 "/wd/hub/session/b537155bafe23671158d49ebce015d91/url"
+[17:43:35]  DATA		{}
+[17:43:35]  RESULT		"https://qa.ckotech.co/v2/dashboard"
+[17:43:36]  COMMAND	POST 	 "/wd/hub/session/b537155bafe23671158d49ebce015d91/element"
+[17:43:36]  DATA		{"using":"css selector","value":"[id = \"kpi-title\"]"}
+[17:43:36]  RESULT		{"ELEMENT":"0.4189528564635183-4"}
+[17:43:36]  COMMAND	GET 	 "/wd/hub/session/b537155bafe23671158d49ebce015d91/element/0.4189528564635183-4/text"
+[17:43:36]  DATA		{}
+[17:43:36]  RESULT		"Key performance indicators"
+[17:43:36]  COMMAND	POST 	 "/wd/hub/session/b537155bafe23671158d49ebce015d91/url"
+[17:43:36]  DATA		{"url":"https://qa.ckotech.co/v2/payments"}
+[17:43:39]  COMMAND	GET 	 "/wd/hub/session/b537155bafe23671158d49ebce015d91/url"
+[17:43:39]  DATA		{}
+[17:43:39]  RESULT		"https://qa.ckotech.co/v2/payments"
+[17:43:41]  COMMAND	POST 	 "/wd/hub/session/b537155bafe23671158d49ebce015d91/element"
+[17:43:41]  DATA		{"using":"css selector","value":"[class=css-1ayii]"}
+[17:43:41]  RESULT		{"ELEMENT":"0.997857946146727-1"}
+[17:43:41]  COMMAND	POST 	 "/wd/hub/session/b537155bafe23671158d49ebce015d91/element/0.997857946146727-1/click"
+[17:43:41]  DATA		{}
+[17:43:43]  COMMAND	POST 	 "/wd/hub/session/b537155bafe23671158d49ebce015d91/element"
+[17:43:43]  DATA		{"using":"css selector","value":"[title=\"payments.com\"]"}
+[17:43:43]  RESULT		{"ELEMENT":"0.997857946146727-2"}
+[17:43:43]  COMMAND	POST 	 "/wd/hub/session/b537155bafe23671158d49ebce015d91/element/0.997857946146727-2/click"
+[17:43:43]  DATA		{}
+[17:43:45]  COMMAND	POST 	 "/wd/hub/session/b537155bafe23671158d49ebce015d91/element"
+[17:43:45]  DATA		{"using":"css selector","value":"[value=Payments]"}
+[17:43:45]  RESULT		{"ELEMENT":"0.997857946146727-3"}
+[17:43:45]  COMMAND	GET 	 "/wd/hub/session/b537155bafe23671158d49ebce015d91/element/0.997857946146727-3/text"
+[17:43:45]  DATA		{}
+[17:43:45]  RESULT		"Payments"
+[17:43:45]  COMMAND	POST 	 "/wd/hub/session/b537155bafe23671158d49ebce015d91/elements"
+[17:43:45]  DATA		{"using":"css selector","value":"[class=th-value]"}
+[17:43:45]  RESULT		[{"ELEMENT":"0.997857946146727-4"},{"ELEMENT":"0.997857946146727-5"},{"ELEMENT":"0.997857946146727-6"},{"ELEMENT":"0.997857946146727-7"},{"ELEMENT":"0.997857946146727-8"}]
+[17:43:45]  COMMAND	POST 	 "/wd/hub/session/b537155bafe23671158d49ebce015d91/execute"
+[17:43:45]  DATA		{"script":"return (function () {\n            localStorage.clear();\n            sessionStorage.clear();\n        }).apply(null, arguments)","args":[]}

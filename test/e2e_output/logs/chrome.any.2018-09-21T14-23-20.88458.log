@@ -1,0 +1,17 @@
+[15:23:20]  COMMAND	GET 	 "/wd/hub/status"
+[15:23:20]  DATA		{}
+[15:23:20]  RESULT		{"build":{"version":"alpha"},"os":{"arch":"x86_64","name":"Mac OS X","version":"10.13.4"}}
+[15:23:20]  COMMAND	POST 	 "/wd/hub/session"
+[15:23:20]  DATA		{"desiredCapabilities":{"javascriptEnabled":true,"locationContextEnabled":true,"handlesAlerts":true,"rotatable":true,"chromeOptions":{"prefs":{"profile.default_content_settings.popups":0,"download.default_directory":"test/e2e_downloads"},"args":["headless","disable-gpu","window-size=1920x1080","no-sandbox"]},"isHeadless":true,"browserName":"chrome","platform":"ANY","name":"","loggingPrefs":{"browser":"ALL","driver":"ALL"},"_":"1 more keys: [\"requestOrigins\"]"}}
+[15:23:21]  INFO	SET SESSION ID 06d7970be3397eb744a58ea9fc5ec963
+[15:23:21]  RESULT		{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db)","userDataDir":"/var/folders/zd/m442nyf515nfj63pgsj132f00000gp/T/.org.chromium.Chromium.6yzej1"},"cssSelectorsEnabled":true,"databaseEnabled":false,"goog:chromeOptions":{"debuggerAddress":"localhost:50346"},"handlesAlerts":true,"hasTouchScreen":false,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platform":"Mac OS X","rotatable":false,"setWindowRect":true,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"69.0.3497.100","webStorageEnabled":true}
+[15:23:21]  COMMAND	POST 	 "/wd/hub/session/06d7970be3397eb744a58ea9fc5ec963/url"
+[15:23:21]  DATA		{"url":"https://qa.ckotech.co/v2/login"}
+[15:23:23]  COMMAND	POST 	 "/wd/hub/session/06d7970be3397eb744a58ea9fc5ec963/element"
+[15:23:23]  DATA		{"using":"css selector","value":"[class=\"cko-button login-btn css-1jsqpzn\"]"}
+[15:23:23]  COMMAND	GET 	 "/wd/hub/session/06d7970be3397eb744a58ea9fc5ec963/screenshot"
+[15:23:23]  DATA		{}
+[15:23:23]  RESULT		"iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4CAYAAADo08FDAAAgAElEQVR4nOzdbXCV5ZnA8SsQQAVDDFLYFhlE0dGltYhst1i7xYrvYltAXVHrG219r7oztR2tOx3Haeuuu7oIraitiiyKVVBEl/pWRWvboSyOUiD4UgVBkIKRkASSc/aDLjMMQgImHLzO7zeTL8/z3M+ ... (47746 more bytes)
+[15:23:23]  	Saved screenshot: ERROR_chrome.any_2018-09-21T14-23-23.261Z.png
+[15:23:23]  COMMAND	POST 	 "/wd/hub/session/06d7970be3397eb744a58ea9fc5ec963/execute"
+[15:23:23]  DATA		{"script":"return (function () {\n            localStorage.clear();\n            sessionStorage.clear();\n        }).apply(null, arguments)","args":[]}

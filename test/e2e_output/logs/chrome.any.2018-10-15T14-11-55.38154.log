@@ -1,0 +1,17 @@
+[15:11:55]  COMMAND	GET 	 "/wd/hub/status"
+[15:11:55]  DATA		{}
+[15:11:55]  RESULT		{"build":{"version":"alpha"},"os":{"arch":"x86_64","name":"Mac OS X","version":"10.13.4"}}
+[15:11:55]  COMMAND	POST 	 "/wd/hub/session"
+[15:11:55]  DATA		{"desiredCapabilities":{"javascriptEnabled":true,"locationContextEnabled":true,"handlesAlerts":true,"rotatable":true,"chromeOptions":{"prefs":{"profile.default_content_settings.popups":0,"download.default_directory":"test/e2e_downloads"},"args":["disable-gpu","window-size=1920x1080","no-sandbox"]},"isHeadless":false,"browserName":"chrome","platform":"ANY","name":"","loggingPrefs":{"browser":"ALL","driver":"ALL"},"_":"1 more keys: [\"requestOrigins\"]"}}
+[15:11:57]  INFO	SET SESSION ID 23e197a676702fd451a56d4d3005a147
+[15:11:57]  RESULT		{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db)","userDataDir":"/var/folders/zd/m442nyf515nfj63pgsj132f00000gp/T/.org.chromium.Chromium.W1Xtzz"},"cssSelectorsEnabled":true,"databaseEnabled":false,"goog:chromeOptions":{"debuggerAddress":"localhost:50814"},"handlesAlerts":true,"hasTouchScreen":false,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platform":"Mac OS X","rotatable":false,"setWindowRect":true,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"69.0.3497.100","webStorageEnabled":true}
+[15:11:57]  COMMAND	POST 	 "/wd/hub/session/23e197a676702fd451a56d4d3005a147/url"
+[15:11:57]  DATA		{"url":"https://qa.ckotech.co/v2/login"}
+[15:12:00]  COMMAND	POST 	 "/wd/hub/session/23e197a676702fd451a56d4d3005a147/element"
+[15:12:00]  DATA		{"using":"css selector","value":"[class=\"css-1kl0c2d\"]"}
+[15:12:00]  RESULT		{"ELEMENT":"0.920251418167519-1"}
+[15:12:00]  COMMAND	GET 	 "/wd/hub/session/23e197a676702fd451a56d4d3005a147/element/0.920251418167519-1/text"
+[15:12:00]  DATA		{}
+[15:12:00]  RESULT		"Did you know?"
+[15:12:00]  COMMAND	POST 	 "/wd/hub/session/23e197a676702fd451a56d4d3005a147/execute"
+[15:12:00]  DATA		{"script":"return (function () {\n            localStorage.clear();\n            sessionStorage.clear();\n        }).apply(null, arguments)","args":[]}

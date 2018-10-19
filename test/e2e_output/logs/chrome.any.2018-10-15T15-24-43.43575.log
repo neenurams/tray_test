@@ -1,0 +1,36 @@
+[16:24:43]  COMMAND	GET 	 "/wd/hub/status"
+[16:24:43]  DATA		{}
+[16:24:44]  RESULT		{"build":{"version":"alpha"},"os":{"arch":"x86_64","name":"Mac OS X","version":"10.13.4"}}
+[16:24:44]  COMMAND	POST 	 "/wd/hub/session"
+[16:24:44]  DATA		{"desiredCapabilities":{"javascriptEnabled":true,"locationContextEnabled":true,"handlesAlerts":true,"rotatable":true,"chromeOptions":{"prefs":{"profile.default_content_settings.popups":0,"download.default_directory":"test/e2e_downloads"},"args":["disable-gpu","window-size=1920x1080","no-sandbox"]},"isHeadless":false,"browserName":"chrome","platform":"ANY","name":"","loggingPrefs":{"browser":"ALL","driver":"ALL"},"_":"1 more keys: [\"requestOrigins\"]"}}
+[16:24:45]  INFO	SET SESSION ID 91bcd48adf7687dab743aa4cebceed8d
+[16:24:45]  RESULT		{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db)","userDataDir":"/var/folders/zd/m442nyf515nfj63pgsj132f00000gp/T/.org.chromium.Chromium.rJb8v2"},"cssSelectorsEnabled":true,"databaseEnabled":false,"goog:chromeOptions":{"debuggerAddress":"localhost:52907"},"handlesAlerts":true,"hasTouchScreen":false,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platform":"Mac OS X","rotatable":false,"setWindowRect":true,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"69.0.3497.100","webStorageEnabled":true}
+[16:24:45]  COMMAND	POST 	 "/wd/hub/session/91bcd48adf7687dab743aa4cebceed8d/url"
+[16:24:45]  DATA		{"url":"https://qa.ckotech.co/v2/login"}
+[16:24:49]  COMMAND	POST 	 "/wd/hub/session/91bcd48adf7687dab743aa4cebceed8d/element"
+[16:24:49]  DATA		{"using":"css selector","value":"[class=ant-input-suffix]"}
+[16:24:49]  RESULT		{"ELEMENT":"0.9332958910912201-1"}
+[16:24:49]  COMMAND	POST 	 "/wd/hub/session/91bcd48adf7687dab743aa4cebceed8d/element/0.9332958910912201-1/click"
+[16:24:49]  DATA		{}
+[16:24:51]  COMMAND	GET 	 "/wd/hub/session/91bcd48adf7687dab743aa4cebceed8d/url"
+[16:24:51]  DATA		{}
+[16:24:51]  RESULT		"https://qa.ckotech.co/v2/forgot-password"
+[16:24:51]  COMMAND	POST 	 "/wd/hub/session/91bcd48adf7687dab743aa4cebceed8d/element"
+[16:24:51]  DATA		{"using":"css selector","value":"[class=css-13phgvc]"}
+[16:24:51]  RESULT		{"ELEMENT":"0.9332958910912201-2"}
+[16:24:51]  COMMAND	GET 	 "/wd/hub/session/91bcd48adf7687dab743aa4cebceed8d/element/0.9332958910912201-2/text"
+[16:24:51]  DATA		{}
+[16:24:51]  RESULT		"Locked yourself out?"
+[16:24:51]  COMMAND	POST 	 "/wd/hub/session/91bcd48adf7687dab743aa4cebceed8d/element"
+[16:24:51]  DATA		{"using":"css selector","value":"#root > div > div > div > div.forgot-password-container > p"}
+[16:24:51]  RESULT		{"ELEMENT":"0.9332958910912201-3"}
+[16:24:51]  COMMAND	GET 	 "/wd/hub/session/91bcd48adf7687dab743aa4cebceed8d/element/0.9332958910912201-3/text"
+[16:24:51]  DATA		{}
+[16:24:51]  RESULT		"Don't worry, we will send you help. Just enter your e-mail below to receive password reset instructions."
+[16:24:51]  COMMAND	POST 	 "/wd/hub/session/91bcd48adf7687dab743aa4cebceed8d/element"
+[16:24:51]  DATA		{"using":"css selector","value":"input[type=\"email\"]"}
+[16:24:51]  RESULT		{"ELEMENT":"0.9332958910912201-4"}
+[16:24:51]  COMMAND	GET 	 "/wd/hub/session/91bcd48adf7687dab743aa4cebceed8d/element/0.9332958910912201-4/text"
+[16:24:51]  DATA		{}
+[16:24:51]  COMMAND	POST 	 "/wd/hub/session/91bcd48adf7687dab743aa4cebceed8d/execute"
+[16:24:51]  DATA		{"script":"return (function () {\n            localStorage.clear();\n            sessionStorage.clear();\n        }).apply(null, arguments)","args":[]}

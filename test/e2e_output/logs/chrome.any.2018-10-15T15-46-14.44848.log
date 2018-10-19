@@ -1,0 +1,42 @@
+[16:46:14]  COMMAND	GET 	 "/wd/hub/status"
+[16:46:14]  DATA		{}
+[16:46:14]  RESULT		{"build":{"version":"alpha"},"os":{"arch":"x86_64","name":"Mac OS X","version":"10.13.4"}}
+[16:46:14]  COMMAND	POST 	 "/wd/hub/session"
+[16:46:14]  DATA		{"desiredCapabilities":{"javascriptEnabled":true,"locationContextEnabled":true,"handlesAlerts":true,"rotatable":true,"chromeOptions":{"prefs":{"profile.default_content_settings.popups":0,"download.default_directory":"test/e2e_downloads"},"args":["disable-gpu","window-size=1920x1080","no-sandbox"]},"isHeadless":false,"browserName":"chrome","platform":"ANY","name":"","loggingPrefs":{"browser":"ALL","driver":"ALL"},"_":"1 more keys: [\"requestOrigins\"]"}}
+[16:46:16]  INFO	SET SESSION ID a66a4192a96ae4280fbffdbf19a0367f
+[16:46:16]  RESULT		{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db)","userDataDir":"/var/folders/zd/m442nyf515nfj63pgsj132f00000gp/T/.org.chromium.Chromium.53Bqjl"},"cssSelectorsEnabled":true,"databaseEnabled":false,"goog:chromeOptions":{"debuggerAddress":"localhost:58238"},"handlesAlerts":true,"hasTouchScreen":false,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platform":"Mac OS X","rotatable":false,"setWindowRect":true,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"69.0.3497.100","webStorageEnabled":true}
+[16:46:16]  COMMAND	POST 	 "/wd/hub/session/a66a4192a96ae4280fbffdbf19a0367f/url"
+[16:46:16]  DATA		{"url":"https://qa.ckotech.co/v2/login"}
+[16:46:20]  COMMAND	POST 	 "/wd/hub/session/a66a4192a96ae4280fbffdbf19a0367f/element"
+[16:46:20]  DATA		{"using":"css selector","value":"[class=ant-input-suffix]"}
+[16:46:20]  RESULT		{"ELEMENT":"0.3723763141138745-1"}
+[16:46:20]  COMMAND	POST 	 "/wd/hub/session/a66a4192a96ae4280fbffdbf19a0367f/element/0.3723763141138745-1/click"
+[16:46:20]  DATA		{}
+[16:46:22]  COMMAND	GET 	 "/wd/hub/session/a66a4192a96ae4280fbffdbf19a0367f/url"
+[16:46:22]  DATA		{}
+[16:46:22]  RESULT		"https://qa.ckotech.co/v2/forgot-password"
+[16:46:22]  COMMAND	POST 	 "/wd/hub/session/a66a4192a96ae4280fbffdbf19a0367f/element"
+[16:46:22]  DATA		{"using":"css selector","value":"[class=css-13phgvc]"}
+[16:46:22]  RESULT		{"ELEMENT":"0.3723763141138745-2"}
+[16:46:22]  COMMAND	GET 	 "/wd/hub/session/a66a4192a96ae4280fbffdbf19a0367f/element/0.3723763141138745-2/text"
+[16:46:22]  DATA		{}
+[16:46:22]  RESULT		"Locked yourself out?"
+[16:46:22]  COMMAND	POST 	 "/wd/hub/session/a66a4192a96ae4280fbffdbf19a0367f/element"
+[16:46:22]  DATA		{"using":"css selector","value":"#root > div > div > div > div.forgot-password-container > p"}
+[16:46:22]  RESULT		{"ELEMENT":"0.3723763141138745-3"}
+[16:46:22]  COMMAND	GET 	 "/wd/hub/session/a66a4192a96ae4280fbffdbf19a0367f/element/0.3723763141138745-3/text"
+[16:46:22]  DATA		{}
+[16:46:22]  RESULT		"Don't worry, we will send you help. Just enter your e-mail below to receive password reset instructions."
+[16:46:22]  COMMAND	POST 	 "/wd/hub/session/a66a4192a96ae4280fbffdbf19a0367f/element"
+[16:46:22]  DATA		{"using":"css selector","value":"input[type=\"email\"]"}
+[16:46:22]  RESULT		{"ELEMENT":"0.3723763141138745-4"}
+[16:46:22]  COMMAND	GET 	 "/wd/hub/session/a66a4192a96ae4280fbffdbf19a0367f/element/0.3723763141138745-4/text"
+[16:46:22]  DATA		{}
+[16:46:22]  COMMAND	POST 	 "/wd/hub/session/a66a4192a96ae4280fbffdbf19a0367f/element"
+[16:46:22]  DATA		{"using":"css selector","value":"button[class=\"cko-button login-btn css-1jsqpzn\"]"}
+[16:46:22]  RESULT		{"ELEMENT":"0.3723763141138745-5"}
+[16:46:22]  COMMAND	GET 	 "/wd/hub/session/a66a4192a96ae4280fbffdbf19a0367f/element/0.3723763141138745-5/text"
+[16:46:22]  DATA		{}
+[16:46:22]  RESULT		"Send me help"
+[16:46:22]  COMMAND	POST 	 "/wd/hub/session/a66a4192a96ae4280fbffdbf19a0367f/execute"
+[16:46:22]  DATA		{"script":"return (function () {\n            localStorage.clear();\n            sessionStorage.clear();\n        }).apply(null, arguments)","args":[]}
